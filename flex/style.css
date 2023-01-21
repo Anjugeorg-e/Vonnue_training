@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.flex-container{
+   display: flex;
+   background: #fff;
+   flex-wrap: wrap;
+
+}
+
+/*.flex-container{
+    content: "";
+    display: block;
+    clear: both;
+
+}*/
+
+.box{
+    height: 100px;
+
+    flex: 1 0 200px;
+    /*flex-basis: 200px;
+   /* min-width: 200px;*/
+   /* min-width: 100px;*/
+   /*width: 320px;
+    float: left;*/
+   /* flex-grow: 1;*/
+    
+}
+
+.one{
+    background: red;
+    flex-shrink: 1;
+   /* flex-grow: 1;*/
+}
+.two{
+    background: blue;
+    flex-shrink: 2;
+   /* flex-grow: 2;*/
+}
+.three{
+    background: green;
+    flex-shrink: 3;
+}
