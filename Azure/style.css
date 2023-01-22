@@ -78,26 +78,78 @@
 
 #mainone{
     padding: 48px 0px;
+    background-color: #f3f3f3;
+    margin-top: -4px;
 }
 #mainone{
     padding: 0px 12px;
 }
-.mainonediv{
+.mainone-two{
     padding: 48px 0px;
 }
 #mainone h1{
     color: #0078d4;
     font-size: 16px;
     font-family: "cereal";
-    margin: 0px 0px 16px;
+    margin: 0px 0px 11px;
 }
 #mainone h2{
     font-size: 29px;
 }
-#mainone p{
-    padding: 0px 0px 16px;
-    line-height: 1.2;
+
+.mainonediv h1{
+    font-family: "cereal-bold";
+    line-height: 1.5;
+    font-weight: 400;
+   
 }
+.mainonediv h2{
+    margin: 0 0 14px;
+    font-family: "cereal";
+}
+.mainonediv p{
+    font-family: "cereal-bold";
+    line-height: 1.54;
+    margin: 0 0 16px;
+}
+.main-buttons .started{
+    padding: 10px 12px;
+    margin: 8px 24px 8px 0px;
+    background: #0078d4;
+    color: white;
+    font-size: 16px;
+    border: 0 solid transparent;
+    border-radius: 2.5px;
+
+}
+.main-buttons .azure_free{
+    padding: 10px 12px;
+    margin: 8px 0px;
+    font-size: 16px;
+    background: #efefef;
+    border: 2px solid black;
+    border-radius: 2.5px;
+}
+.main-buttons{
+    margin: -8px 0;
+    cursor: pointer;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*media query*/
@@ -224,9 +276,10 @@ justify-content: space-between;
     .headthreelist ul{
         display: flex;
         list-style-type: none;
+        align-items: center;
     }
    .headthreelist li{
-    padding: 8px;
+    padding: 4px;
     font-family: "cereal-bold";
    }
     .headthreelist .sign{
