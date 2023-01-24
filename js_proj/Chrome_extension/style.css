@@ -21,6 +21,10 @@ button{
     padding: 10px 20px;
     font-weight: bold;
 }
+#delete-btn{
+     color: #5f9341;
+     background-color: white;
+}
 ul{
  list-style-type: none;
  padding-left: 0px;

@@ -3,26 +3,74 @@
 }*/
 
 let myLeads=[]  //can be reassigned the values or can be redeclared
-const inputEl=document.getElementById("input-el")  //cannot reassign value.always same
-let inputBtn = document.getElementById("input-btn")
-const ulEl=document.getElementById("ul-el")
+let oldLeads=[]
+/*
+myLeads = JSON.parse(myLeads)
+myLeads.push("www.lead2.com")
+console.log(typeof myLeads)*/
 
+
+const inputEl=document.getElementById("input-el")  //cannot reassign value.always same
+const inputBtn = document.getElementById("input-btn")
+const ulEl=document.getElementById("ul-el")
+const deleteBtn=document.getElementById("delete-btn")
+
+
+
+/*
 localStorage.setItem("myLeads", "www.example.com")
 let name=localStorage.getItem("myLeads")
-localStorage.clear()
+localStorage.clear()*/
+
+const leadsFromLocalStorage=JSON.parse(localStorage.getItem("myLeads"))
 
 //console.log(ulEl)
 
 
-inputBtn.addEventListener("click", function(){
-    myLeads.push(inputEl.value)
-    //myLeads.push("www.awesomelead.com")
-   // console.log(myLeads)
-   inputEl.value= ""
-   renderLeads()
+
+/*if(leadsFromLocalStorage){
+    myLeads=leadsFromLocalStorage
+    renderLeads()
+}*/
+if(leadsFromLocalStorage){
+    myLeads=leadsFromLocalStorage
+    render(myLeads)
+}
+
+const tabs=[{url:"https"}]
+
+function render(leads){
+    let listItems=""
+    for(let i=0; i<leads.length; i++){
+        listItems += ` 
+<li><a target='_blank' href='${leads[i]}'>
+   ${leads[i]} 
+   </a>
+   </li>
+
+`
+}
+ulEl.innerHTML=listItems
+}
+
+deleteBtn.addEventListener("dblclick",function(){
+   // console.log("double clicked")
+    localStorage.clear()
+    myLeads=[]
+    render(myLeads )
 })
 
+inputBtn.addEventListener("click", function(){
+    myLeads.push(inputEl.value)
+    inputEl.value= ""
+    //myLeads.push("www.awesomelead.com")
+   // console.log(myLeads)
+   localStorage.setItem("myLeads",JSON.stringify(myLeads))
+   
+   render(myLeads)
+})
 
+/*
 function renderLeads(){
 let listItems=""
 for(let i=0; i<myLeads.length; i++){

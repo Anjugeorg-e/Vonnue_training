@@ -521,3 +521,27 @@ console.log(email)
 
 const em=` hey ${sender} how is it going`
 console.log(em)
+
+
+function add(a,b){//parameter---will be declared in side a function
+   let sum=a+b
+    return sum;
+}
+console.log(add(3,4))//arguments  are value we are passing to invoke the function.arguments will be created outside of the function
+console.log(add(9,102))
+
+
+function getFirst(arr){
+    return arr[0]
+}
+let fir=getFirst([10,5,6])
+console.log(fir)
+
+let myCourses = ["learn css" ,"js","html"]
+
+function lea(arr){
+       for(let i=0;i<arr.length;i++){
+        console.log(arr[i])
+       }
+}
+lea(myCourses)
