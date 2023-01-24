@@ -17,6 +17,7 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
+    height: 80px;
 }
 .icon{
     width: 32px;
@@ -106,48 +107,121 @@
 .mainonediv h2{
     margin: 0 0 14px;
     font-family: "cereal";
+    
 }
 .mainonediv p{
     font-family: "cereal-bold";
     line-height: 1.54;
-    margin: 0 0 16px;
+    margin: 0 0 17px;
 }
 .main-buttons .started{
-    padding: 10px 12px;
+   padding: 10px 13px;
     margin: 8px 24px 8px 0px;
     background: #0078d4;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     border: 0 solid transparent;
     border-radius: 2.5px;
-
+    font-weight: bold;
+    font-family: "cereal";
 }
 .main-buttons .azure_free{
-    padding: 10px 12px;
-    margin: 8px 0px;
-    font-size: 16px;
+   /* padding: 10px 12px; */
+   padding: 9px 12px;
+    margin: 8px 4px;
+    font-size: 15px;
     background: #efefef;
     border: 2px solid black;
     border-radius: 2.5px;
+    font-weight: bold;
+    font-family: "cereal";
 }
 .main-buttons{
-    margin: -8px 0;
+    margin: -7px 0;
     cursor: pointer;
     display: flex;
+    padding-inline-start: 1px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.content-one{
+    margin: 24px 0 16px;
+    padding: 8px 0 16px;
+}
+.content-one h2{
+    margin: 0 0 8px;
+    padding: 0 12px;
+    font-family: "cereal";
+    font-size: 19px;
+    line-height: 1.2;
+}
+.layout-container{
+    margin: 0 0 24px;
+    /*padding: 0 12px;*/
+    box-sizing: border-box;
+    border-radius: 0.5px;
+    margin-inline: 12px;
+    margin-inline: 12px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);
+}
+.migrate img{
+    height: 100%;
+    width: 100%;
+}
+.leader a{
+    font-size: 17px;
+    color: #0067b8;
+    font-family: "cereal";
+}
+.leader{
+    padding: 24px 0 0;
+    margin: 0 0 8px;
+}
+.migrate-one{
+    padding: 0 24px;
+    height: 195px;
+}
+.postgresql{
+    font-family: "cereal-bold";
+    line-height: 1.5;
+    font-size: 16px;
+}
+.cards-two{
+    padding: 24px;
+}
+.cards-two img{
+    width: 99px;
+    height: 99px;
+    margin-left: -7px;
+}
+.cards-three img{
+    width: 99px;
+    height: 99px;
+}
+.cards-two{
+    display: flex;
+    margin: 0 12px;
+    height: 379.97px;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11)!important;
+}
+.cardstwo-link a{
+    margin: 0 0 8px;
+    font-family: "cereal";
+    color: #0067b8;
+    font-size: 18px;
+}
+.cardstwo-link p{
+    font-family: "cereal-bold";
+  line-height: 1.5;
+}
+.cards-three{
+    display: flex;
+    margin: 0 12px;
+    margin-top: 24px;
+    height: 288px;
+}
 
 
 
@@ -163,7 +237,6 @@
 .headtwo{
 display: flex; 
 justify-content: space-between;
-
 }
 .headtwoone{
     display: flex;
@@ -242,16 +315,40 @@ justify-content: space-between;
 .headthree{
     display: none;
 }
+.migrate-one{
+    padding: 24px 0;
 }
+.migrate{
+    margin-top: 17px;
+}
+.migrate-one{
+    padding: 0 24px;
+    height: 110px;
+}
+
+}
+
+
 
 @media screen and (min-width: 860px) {
     
-    .back-img img{
+    .headtwo{
+        background-image: url();
+    }
+    .content-one h2{
+        text-align: center;
+    }
+
+
+
+   /* .back-img img{
         display: inline;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 16px;
-    }
-   
+    } */
+
+    
+    
 
 }
 @media  screen and (min-width: 1080px) {
@@ -295,7 +392,7 @@ justify-content: space-between;
         border: 1px solid #747479;
     }
     .az_name{
-        padding: 0px 10px 7px 0px;
+        padding: 4px 10px 7px 0px;
         margin: 0 0 6px 24px;
     }
     .headthreelist button{
@@ -314,6 +411,10 @@ justify-content: space-between;
 
     .headthreeone .icon{
         margin-top: -13px;
+        
+    }
+    .headthreeone .icon svg{
+        margin-block-start: 3px;
     }
     .headthreeone az_name{
         margin: 0 0 0 10px;
@@ -332,17 +433,51 @@ justify-content: space-between;
     .search-button i{
         position: absolute;
         margin-top: 8px;
-       
         margin-left: 87px;
-
     }
     .search-one{
         display: flex;
     }
 
+    #mainone{
+        margin: 0;
+        padding: 54px;
+        background-image: url(Asset/img/Desktop\ hero.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: fit-content;
+        background-size: cover;  
+        width: 100%;
+        height: 100%;
+        padding-bottom: 42px;
+    }
+    .mainone-two{
+        padding: 48px 48px;
+    }
+    .mainonediv p{
+        -webkit-text-size-adjust: 100%;
+        width: 473px;
+        padding-top: 0px;
+    }
+    #mainone h1{
+        margin-top: -9px;
+    }
+    #mainone h2{
+        margin: 0 0 20px;
+        margin-top: 3px;
+        font-size: 37px;
+        padding-top: 3px;
+    }
+    .content-one h2{
+        font-size: 21px;
+    }
 
 
 }
+
+ 
+
+
 
 
 
