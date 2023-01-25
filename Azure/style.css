@@ -223,6 +223,32 @@
     height: 288px;
 }
 
+.cards-three{
+    display: flex;
+    margin: 0 12px;
+    height: 264px;
+    align-items: center;
+    margin-top: 23px;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 .375rem .875rem 0 rgba(0,0,0,.13),0 .0625rem .25rem 0 rgba(0,0,0,.11);
+}
+.cards-three img{
+    height: 85px;
+    width: 85px;
+}
+
+.cardsthree-link a{
+    font-family: "cereal";
+    color: #0067b8;
+    font-size: 18px;
+}
+.cardsthree-link{
+    padding: 24px;
+    font-family: "cereal-bold";
+    line-height: 1.5;
+}
+
 
 
 
