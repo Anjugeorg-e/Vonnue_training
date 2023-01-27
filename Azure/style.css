@@ -614,16 +614,36 @@ justify-content: space-between;
   
     .container-two{
         padding-left: 0.75rem;
-        padding-right: 0.75rem;
+        padding-right: 0.75rem;display: flex;
+
       
     }
     .cards-settwo{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);;
-        white-space: nowrap;
+        grid-template-columns: repeat(3,3fr);
+        box-shadow: 0 .375rem .875rem 0 rgba(0,0,0,.13),0 .0625rem .25rem 0 rgba(0,0,0,.11);
+        /*white-space: nowrap;*/
         overflow: hidden;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
        
+    }
+    .cardz{
+        padding: 0 12px;
+    }
+    .tab-links{
+        margin-top: 6rem;
+    }
+    .tab-links a{
+        margin: 0 0 16px;
+        cursor: pointer;
+    }
+    .tab-links a:hover{
+        color: #0067b8;
+        border-bottom: none;
+        
+        border: 2px dashed #0067b8;
+        border-left: 3px solid #0067b8;
     }
     
    
