@@ -112,10 +112,10 @@
 .mainonediv p{
     font-family: "cereal-bold";
     line-height: 1.54;
-    margin: 0 0 17px;
+    margin: 0 0 20px;
 }
 .main-buttons .started{
-   padding: 10px 13px;
+   padding: 10px 15px;
     margin: 8px 24px 8px 0px;
     background: #0078d4;
     color: white;
@@ -135,6 +135,8 @@
     border-radius: 2.5px;
     font-weight: bold;
     font-family: "cereal";
+
+    padding: 9px 12px 4px 16px;
 }
 .main-buttons{
     margin: -7px 0;
@@ -604,10 +606,19 @@ justify-content: space-between;
 .cardz{
     margin-top: 1px;
 }
+.tab-group{
+    border: 0.1875rem solid transparent;
+    display: flex;
+    overflow: scroll;
+    cursor: pointer;
+    align-items: center;
+    margin: 0 24px 0 3px;
+    justify-content: center;
+   
 
 }
 
-
+}
 
 @media screen and (min-width: 860px) {
     
@@ -700,6 +711,9 @@ justify-content: space-between;
         
        
     }
+    .cards-onpremise{
+        padding: 0;
+    }
     .cardz{
         align-items: center;
         margin-top: 1px;
@@ -737,8 +751,55 @@ justify-content: space-between;
     .products{
         text-align: center;
     }
+
+    .cardz{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+       
+        margin: 0 0 48px;
+        border-radius: 0.5rem;
+        box-shadow: 0 .375rem .875rem 0 rgba(0,0,0,.13),0 .0625rem .25rem 0 rgba(0,0,0,.11);
+    }
+
+    /*
+    .tab-group{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .tab-group{
+        overflow: scroll;
+        
+    }
+    .tab-group img{
+        margin-right: 3rem;
+    }
+    .tab-group .nhs_logo{
+        width: 116px;
+        height: 58px;
+        padding: 3px;
+        border: 0.1875rem solid transparent;
+        border-color: #0078D4;
+        border-radius: 0.625rem;
+        margin-left: 0.1875rem;
+        margin-right: 3rem;
+        filter: none;
+    }
     
-   
+    .tab-group .forza_logo{
+        width: 116px;
+        height: 63px;
+        margin-right: 3rem;
+    }
+    .tab-group .tab_acs{
+        width: 116px;
+        height: 70px;
+        margin-right: 3rem;
+    }
+  
+   */
 
 }
 @media  screen and (min-width: 1080px) {
@@ -906,7 +967,33 @@ justify-content: space-between;
 
 @media screen and (min-width: 1440px) {
 
+    .headtwo{
+        display: none;
+     }
 
+     .az_name{
+        padding: 0 10px 7px 0;
+     }
+     .dropdown{
+        padding-left: 13px;
+        padding-top: 1px;
+     }
+     .headthreelist{
+        padding: 0;
+     }
+ .headthreeone{
+    margin: 0 355px 0 0;
+ }
+ .search-button{
+    margin-right: 24px;
+ }
+.headthreelist button{
+    width: 94px;
+    height: 31px;
+}
+.headthreelist li{
+    padding: 20px 8px;
+}
     
 }
  
