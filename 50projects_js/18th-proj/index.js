@@ -18,7 +18,7 @@ rightBtn.addEventListener('click', () => {
 })
 
 leftBtn.addEventListener('click', () => {
-    activeSlide--;
+    activeSlide--
 
     if(activeSlide < 0){
         activeSlide=slides.length-1;
@@ -35,7 +35,7 @@ function setBgToBody(){
     body.style.backgroundImage = slides[activeSlide].style.backgroundImage;
 }
 function setActiveSlide(){
-    slides.forEach((slide) => slide.classList.remove('active'))
+    slides.forEach(slide=> {slide.classList.remove('active')})
 
     slides[activeSlide].classList.add('active')
 }
