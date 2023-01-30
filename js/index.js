@@ -53,7 +53,7 @@ function under()
 */
 
 //passing a returned value to a varaiable
-
+/*
 var changed=0;
 function myfunction(num)
 {
@@ -72,5 +72,23 @@ var testArr = [1,2,3,4,5];
 
 console.log("before:" + JSON.stringify(testArr));
 console.log(nextInline(testArr, 6));
-console.log("After:" + JSON.stringify(testArr));
+console.log("After:" + JSON.stringify(testArr));*/
+
+
+let a='23' + '10' + 3;  // number to string
+console.log(a)
+
+let b='23' - '10' - 3;       //string to number
+console.log(b)
+
+let n = '1' +1 ;
+n= n-1;
+console.log(n);
+
+let m='10' - '4' - '3' -2 + '5'; //op---15
+console.log(m);
+
+
+
+
 
