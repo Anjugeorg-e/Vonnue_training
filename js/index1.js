@@ -8,6 +8,8 @@ console.log(Boolean("12"));   //true
 console.log(Boolean({})) //true
 
 */
+
+/*
 const money=0;          //falsy value
 if(money){
     console.log("use it wisely!");
@@ -31,4 +33,68 @@ else{
     console.log("height is undefined")
 }
 
+*/
 
+/*
+let dolphins;
+
+let dolphinSum=(96+108+89)
+let dolphinAvg=(dolphinSum)/3;
+
+console.log(dolphinSum);
+
+let kolas;
+let kolasSum=(88+91+110)
+let kolasAvg=(kolasSum)/3;
+console.log(kolasSum);
+
+if(dolphinAvg>kolasAvg){
+    console.log("dolphin wins")
+}
+else if (dolphinAvg === kolasAvg){
+    console.log("both wins")
+}
+else{
+    console.log("kolas wins");
+}
+
+  
+
+let minScore=100;
+if(dolphinAvg>kolasAvg && dolphinAvg>= 100){
+    console.log("dolphin wins in match")
+}
+else if(kolasAvg>dolphinAvg && kolasAvg >=100){
+    console.log("kolaswins")
+
+}
+
+if(kolasAvg==dolphinAvg && kolasAvg>=100 && dolphinAvg>=100){
+    console.log("both team wins")
+}
+else{
+    console.log("no team wins")
+}
+*/
+
+let day='thursday';
+
+if(day === 'monday'){
+    console.log("today is monday")
+}
+else if(day === 'tuesday'){
+    console.log("today is monday")
+}
+else if(day === 'wednesday' || day ==='thursday'){
+    console.log("today is the day")
+}
+else if(day === 'friday' || day ==='saturday'){
+    console.log("today is weekday")
+}
+else if(day === 'sunday'){
+    console.log("sunday")
+
+}
+else{
+    console.log("not a avlid day")
+}
