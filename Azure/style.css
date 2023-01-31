@@ -450,6 +450,7 @@
 }
 .tab-group .tab_acs{
     width: 4rem;
+    margin-left: 30px;
 }
 
 .tab-panel{
@@ -473,12 +474,45 @@
 .tab-panel-content p{
     margin: 0 0 8px;
     color: #ffffff;
+    line-height: 1.2;
 }
 .tab-panel-content a{
     text-decoration: none;
     color: #50e6ff;
+    font-size: 16px;
 }
+.card-body-img{
+    padding-top: 15px;
+}
+.card-body-img img{
 
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.card-body-one{
+    padding: 24px;
+}
+.card-body-one h2{
+    font-family: "cereal";
+    line-height: 1.15;
+    margin: 0 0 12px;
+}
+.card-body button{
+    margin: 8px 0;
+    padding: 8px 12px;
+    color: #0078D4;
+    border: 2px solid #0078D4;
+    background-color: #fff;
+    font-family: "cereal";
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+.card-body{
+    background-color: #f8f9fa;
+    padding-bottom: 3rem;
+}
 
 
 
@@ -660,6 +694,10 @@ justify-content: space-between;
     width: 52px;
     height: 34px;
 }
+.tab_acs_logo{
+    width: 3rem;
+
+}
 
 }
 
@@ -817,13 +855,18 @@ justify-content: space-between;
     .cards-two{
         padding: 11px;
     }
+    .cards-two img{
+        margin-left: 3px;
+    }
     .cardstwo-link{
         padding: 6px;
     }
     .tab-panel-content{
         padding: 48px;
     }
-
+    .innovating-azure{
+        text-align: center;
+    }
 
     .tab-group{
         display: flex;
@@ -836,10 +879,12 @@ justify-content: space-between;
     }
     .tab-group img{
         margin-right: 3rem;
+        margin-left: 0.1875rem;
+       
     }
     .tab-group .nhs_logo{
         width: 116px;
-        height: 58px;
+        height: 69px;
         padding: 3px;
         border: 0.1875rem solid transparent;
         border-color: #0078D4;
@@ -851,18 +896,74 @@ justify-content: space-between;
     
     .tab-group .forza_logo{
         width: 116px;
-        height: 63px;
+        height: 66px;
         margin-right: 3rem;
     }
     .tab-group .tab_acs{
-        width: 116px;
+        width: 124px;
         height: 70px;
         margin-right: 3rem;
     }
-    .tab-panel-container{
+    .tab_pepsico{
+        width: 116px;
+        height: 69px;
+    }
+    .tab-panel{
+        position: relative;
+    }
+
+   /* .tab-panel-container{
         padding: 0 12px;
+        position: absolute;
+        top: 280px;
+    }*/
+
+    .tab-panel-container{
+    
+        
+        margin-block-start: 183px;
+        padding-inline: 14px;
+        position: relative;
+        bottom: 211px;
     }
   
+    .tab-panel-content{
+        margin-block: -4px;
+    }
+   /*.card-body{
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-items: center;
+    /*padding-bottom: 48px;
+    padding-bottom: 0px;
+   
+   }*/
+
+   .card-body{
+    padding: 0 12px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  
+    /*padding-bottom: 48px;*/
+    padding-bottom: 0px;
+    margin-block-start: -231px;
+   
+   }
+   .card-body-img img{
+  
+    width: 92%;
+   }
+   .card-body-one{
+    margin-block-start: 24px;
+    padding: 48px;
+
+   }
+   .azure_ongoing{
+    padding: 24px 0;
+   }
    
 
 }
@@ -1026,7 +1127,50 @@ justify-content: space-between;
     padding-right: 4%;
 }
 
+.tab-panel{
+    position: relative;
+}
 
+.tab-panel-container{
+    padding: 0 12px;
+    position: absolute;
+    top: 350px;
+}
+
+
+}
+
+@media screen and (min-width: 1084px){
+    .tab-panel{
+        position: relative;
+    }
+
+    .tab-panel-container{
+        padding: 0 12px;
+        position: absolute;
+        top: 135px;
+        width: 58.33%;
+        padding-left: 5%;
+    }
+    .tab-panel-content p{
+        font-size: 19px;;
+    }
+}
+@media screen and (min-width: 1300px){
+    .tab-panel{
+        position: relative;
+    }
+
+    .tab-panel-container{
+        padding: 0 12px;
+        position: absolute;
+        top: 245px;
+        width: 58.33%;
+        padding-left: 5%;
+    }
+    .tab-panel-content p{
+        font-size: 19px;;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -1057,6 +1201,20 @@ justify-content: space-between;
 }
 .headthreelist li{
     padding: 20px 8px;
+}
+.tab-panel{
+    position: relative;
+}
+
+.tab-panel-container{
+    padding: 0 12px;
+    position: absolute;
+    top: 263px;
+    width: 66.66%;
+    padding-left: 5%;
+}
+.tab-panel-content p{
+    font-size: 21px;;
 }
     
 }
