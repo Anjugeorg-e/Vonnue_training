@@ -465,16 +465,23 @@
     height: 100%;
 }
 .tab-panel-content{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.tab-panel-content{
+
     padding: 48px 12px;
     font-size: 18px;
     font-family: "cereal";
     background: #1A1A1F;
     position: relative;
+  
 }
 .tab-panel-content p{
     margin: 0 0 8px;
     color: #ffffff;
     line-height: 1.2;
+   
 }
 .tab-panel-content a{
     text-decoration: none;
@@ -511,7 +518,7 @@
 }
 .card-body{
     background-color: #f8f9fa;
-    padding-bottom: 3rem;
+
 }
 
 
@@ -698,6 +705,11 @@ justify-content: space-between;
     width: 3rem;
 
 }
+
+/*
+.card-body{
+    padding-bottom: 0;
+}*/
 
 }
 
@@ -930,6 +942,16 @@ justify-content: space-between;
     .tab-panel-content{
         margin-block: -4px;
     }
+
+
+    .card-body{
+        margin-block-start: -212px;
+        display: flex;
+        align-items: center;
+    }
+    .card-body-img{
+        width: 98%;
+    }
    /*.card-body{
     padding: 0 12px;
     display: flex;
@@ -941,6 +963,8 @@ justify-content: space-between;
    
    }*/
 
+
+   /*
    .card-body{
     padding: 0 12px;
     display: flex;
@@ -948,7 +972,7 @@ justify-content: space-between;
     align-items: center;
   
     /*padding-bottom: 48px;*/
-    padding-bottom: 0px;
+   /* padding-bottom: 0px;
     margin-block-start: -231px;
    
    }
@@ -960,7 +984,7 @@ justify-content: space-between;
     margin-block-start: 24px;
     padding: 48px;
 
-   }
+   }*/
    .azure_ongoing{
     padding: 24px 0;
    }
@@ -1129,14 +1153,29 @@ justify-content: space-between;
 
 .tab-panel{
     position: relative;
+   
 }
 
 .tab-panel-container{
     padding: 0 12px;
     position: absolute;
     top: 350px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-
+.tab-panel-content{
+    width: 58.33%;
+    top: -403px;
+    font-size: 19px;
+}
+.card-body{
+    margin-block-start: -57px;
+}
+/*
+.card-body{
+    padding-bottom: 0;
+    margin-block-start: 0;
+}*/
 
 }
 
@@ -1149,7 +1188,7 @@ justify-content: space-between;
         padding: 0 12px;
         position: absolute;
         top: 135px;
-        width: 58.33%;
+        
         padding-left: 5%;
     }
     .tab-panel-content p{
