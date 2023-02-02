@@ -1049,6 +1049,19 @@ justify-content: space-between;
     padding: 24px 0;
    }
    
+   .container_sec_one{
+    display: flex;
+    align-items: center;
+   }
+  
+   .container_sec_one{
+    display: flex;
+    flex-direction: row;
+   }
+  .container_box_one{
+    display: flex;
+    flex-direction: row;
+  }
 
 }
 @media  screen and (min-width: 1080px) {
