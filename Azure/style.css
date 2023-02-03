@@ -1244,6 +1244,7 @@ justify-content: space-between;
 .card-body{
     margin-block-start: -57px;
 }
+
 /*
 .card-body{
     padding-bottom: 0;
@@ -1267,7 +1268,8 @@ justify-content: space-between;
     .tab-panel-content p{
         font-size: 19px;;
     }*/
-}
+
+   }
 @media screen and (min-width: 1300px){
    /* .tab-panel{
         position: relative;
