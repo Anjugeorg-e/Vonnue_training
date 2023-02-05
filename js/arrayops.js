@@ -14,7 +14,7 @@ console.log(friends);
                 //unshift return the length of the array
 ///////////////////////////////////////////////
 
-//pop to remove element from the end
+//pop to remove element from the end///////
 
 friends.pop()
 console.log(friends)
