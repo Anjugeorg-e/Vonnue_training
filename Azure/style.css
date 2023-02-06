@@ -567,7 +567,7 @@
     margin-bottom: 1rem;
 }
 .video_game{
-    background-color: #1A1A1F;
+    background-color: #000000;
     color: #fff;
     font-family: "cereal";
     padding: 48px 12px;
@@ -615,21 +615,26 @@
 .azure_sales{
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 .azure_sales img{
     width: 48px;
     height: 48px;
+    margin-left: 19px;
 }
-
+.sales_secimg img{
+          margin-left: 21px;
+}
 
 .azure_sales{
     padding: 0 12px;
 }
 .sales_sec{
-    padding: 0 12px;
+   /* padding: 0 12px;*/
     margin-bottom: 3rem;
     padding-top: 1.5rem;
     border-radius: 0.5rem;
+    padding-bottom: 1.5rem;
     box-shadow: 0 0.1875rem 0.4375rem 0 rgb(0 0 0 / 13%), 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 11%);
 }
 .sales_sec a{
@@ -654,13 +659,182 @@
 .az_sales{
     padding: 24px 24px 0;
 }
+.az_sales p{
+    margin-top: 0.5rem;
+}
+.azure_ownpace{
+    margin-block-end: 41px;
+}
 
 
 
+.azure_footer{
+    background-color: #f4f5f6;
+    padding: 48px 0 36px;
+}
+.azure_footer_nav{
+    padding: 0 18px;
+    
+}
+.footer_navone{
+    padding: 12px;
+    display: flex;
+    background-color: #eaebec;
+    flex-direction: row;
+    border-radius: 4px;
+    align-items: center;
+    transform: translateY(-5px);
+    margin-inline-end: 60px;
+}
+.footer_navone img{
+    width: 24px;
+    height: 24px;
+    
+}
+.footer_navone a{
+    text-decoration: none;
+    color: #4c4c51;
+    font-family: "cereal";
+    font-size: 14px;
+    margin: 0 0 0 12px;
+}
+.footer_navtwo{
+    margin: 12px 0 0 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateY(-3px);
+}
+.footer_navtwo img{
+    margin-left: 24px;
+}
+img.twitter{
+    margin-left: 0px;
+}
+
+.footer_nav_column{
+    margin-top: 36px;
+    padding: 0 18px;
+    transform: translateY(-1px);
+}
+.footer_nav_column ::after{
+    content: "+";
+    font-size: 17px;
+    color: #4c4c51;
+}
+.nav_content{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_content{
+    padding: 12px 24px;
+    background-color: #eaebec;
+    margin-top: 36px;
+    border-radius: 4px;
+    font-family: "cereal";
+    font-size: 14px;
+    color: #1A1A1F;
+}
+.footer_nav_row{
+    margin-top: 36px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.dropdown_cultures{
+    font-size: 16px;
+    font-family: "cereal";
+    color: #1A1A1F;
+   
+}
+.dropdown_cultures p{
+    font-family: "cereal-bold";
+    color: #1A1A1F;
+    margin: 0 0 6px;
+}
+.dropdown_cultures_one{
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #747479;
+    background-color: #fff;
+    max-width: 30ch;
+    font-family: "cereal-bold";
+    width: 100%;
+    padding-bottom: 8px;
+}
+.dropdown_cultures option{
+    color: #1a1a1f;
+}
+
+.footer_min_links{
+    margin-top: 36px;
+    display: flex;
+    
+}
+.footer_min_links ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.footer_min_links li{
+    list-style-type: none;
+    margin-bottom: 12px;
+    font-family: "cereal-bold";
+    font-size: 12px;
+    margin: 0 0 12px 16px;
+    padding: 2px 0;
+    color: #1A1A1F;
+    line-height: 1.5;
+}
+.footer_microsoft{
+    font-weight: 600;
+    font-family: "cereal";
+ 
+}
 
 
+.chat button{
+    position:fixed;
+    bottom:0;
+    right:0;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    background-color: #0067b8;
+    /*padding: 10px 12px 10px 35px;*/
+    padding: 7px 10px 8px 11px;
+    color: #fff;
+    font-family: "cereal";
+    font-size: 16px;
+    right: 1rem;
+   /* padding: .625rem 0.75rem;*/
+    border: 0.125rem solid transparent;;
+}
+.chat i{
+    margin-right: 6px;
+}
 
+.footer_navcolumn_two{
+    display: none;
+}
 /*media query*/
+
+@media screen and (min-width: 392px){
+    .azure_footer_nav{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+
+    }
+    .footer_navone{
+        margin-inline-end: 0;
+    }
+    .footer_navcolumn_two{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 768px){
 
     .main-body{
@@ -855,7 +1029,15 @@ justify-content: space-between;
     flex-direction: row;
     align-items: center;
 }
-
+.sales_sec{
+    padding-bottom: 2.5rem;
+}
+.dropdown_cultures_one{
+    max-width: 25ch;
+}
+.footer_navtwo{
+    margin-left: 36px;
+}
 
 }
 
@@ -1108,8 +1290,56 @@ justify-content: space-between;
    .video_play p{
     padding-right: 13px;
    }
+   .azure_sales{
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 195px;
+   }
+   .sales_sec{
+    margin: 0 12px;
+    padding-bottom: 2.5rem;
+    width: 50%;
+   }
 
 }
+
+@media screen and (min-width: 960px) {
+    
+
+    .footer_nav_column{
+        display: none;
+    }
+    .footer_navcolumn_two{
+        margin-top: 36px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding-left: 18px;
+        padding-right: 18px;
+        font-family: "cereal";
+        column-gap: 24px;
+    }
+    .footer_navcolumn_two li{
+        list-style-type: none;
+    }
+    .footertwo_nav h3{
+        font-size: 14px;
+        color: #1A1A1F;
+        font-family: "cereal-bold";
+    }
+    .footertwo_nav ul{
+        margin: 12px 0 0;
+    }
+    .footertwo_nav li{
+        font-size: 12px;
+        color: #1A1A1F;
+        padding: 2px 0;
+        font-family: "cereal-bold";
+        margin-top: 12px;
+    }
+
+
+}
+
 @media  screen and (min-width: 1080px) {
      .headtwo{
         display: none;
@@ -1324,10 +1554,6 @@ justify-content: space-between;
     .boxz{
         margin: 0 0 24px;
     }
-
-
-
-
     .video_azure{
         position: relative;
     }
@@ -1362,8 +1588,23 @@ justify-content: space-between;
     .video_play{
         margin: 16px 24px 16px 0;
     }
+    .video_play p{
+        font-size: 16px;
+    }
     .video_play i{
-        margin: 15px 0 0;
+        margin: 12px 0 0;
+        padding-left: 0.7rem;
+    }
+    .azure_sales{
+        margin-top: 3rem;
+        padding: 0 41.1875px;
+        margin-bottom: 3rem;
+    }
+    .sales_sec{
+        padding-bottom: 2.5rem;
+    }
+    .sales_sec a{
+        font-size: 19px;
     }
     
 
