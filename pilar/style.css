@@ -1,0 +1,36 @@
+
+
+
+.partners_div{
+    padding: 56px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+    background: #F8FBFE;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.25);
+}
+
+.partners_div h3{
+    font-size: 24px;
+    color: #0A0A19;
+    line-height: 28.13px;
+}
+.partners_logo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.partners_logo img{
+    padding: 56px 16px;
+   
+}
+
+.partners_button{
+    display: none;
+}

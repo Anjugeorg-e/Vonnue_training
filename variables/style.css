@@ -1,0 +1,44 @@
+:root{
+
+    --linkcolor:black;
+    --bannercolor:pink;
+}
+
+
+.banner{
+
+    border: 3px solid red;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+    padding: 3px;
+    /*color:green*/
+    color: var(--bannercolor);
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.links{
+    padding: 12px;
+   
+}
+
+.main-link{
+    color: var(--linkcolor);
+}
+
+nav li {
+    list-style-type:none;
+    text-align:right;
+    margin-right:50px;
+}
+
+.swatches span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
