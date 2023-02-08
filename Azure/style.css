@@ -1728,6 +1728,9 @@ justify-content: space-between;
 .footer_min_links ul{
     margin-inline-start: 499px;
 }
+.footer_navone{
+    transform: translateY(8px);
+}
 }
  
 
