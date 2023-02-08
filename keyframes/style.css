@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.sky, .grass, .road{
+    position: relative;
+}
+
+
+.sky{
+    height: 40%;
+    background-color: rgb(41, 191, 236);
+    
+}
+
+.grass{
+    background-color: rgb(18, 63, 18);
+    height: 30%;
+}
+
+.road{
+    height: 30%;
+    background-color: rgb(99, 97, 97);
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100% ;
+}
+
+.lines{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 81%
+}
+
+.mario{
+    position: absolute;
+    top: 700px;
+    left: 0px;
+    /*animation-name: drive;*/
+    animation: drive 3s both infinite linear,
+                jump 0.3s 1.2s ease;
+    /*animation-duration: 3s;*/
+   /* animation-fill-mode: forwards;*/
+    /*animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    /*animation-iteration-count: 2;*/
+    /*animation-timing-function: linear;*/
+    animation-timing-function: cubic-bezier(.42, 0 , .58 ,1);
+}
+
+.luigi{
+    position: absolute;
+    top: 600px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+     /*animation-direction: reverse;*/ 
+    animation-timing-function: ease-in-out;
+
+}
+
+.cloud{
+    position: absolute;
+}
+
+.cloud:nth-child(1){
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    animation-name: wind;
+    animation-duration: 58s;
+    animation-iteration-count: infinite;
+    
+}
+
+.cloud:nth-child(2){
+    width: 300px;
+    top: 0px;
+    animation-name: wind;
+    animation-duration: 48s;
+}
+
+@keyframes drive{
+    /*from{ transform: translateX(200px)}*/
+    from{ transform: translateX(-200px)}
+    to{ transform: translateX(1000px)}
+}
+
+@keyframes wind{
+    from{left: -300px}
+    to{left: 100%}
+}
+
+@keyframes jump{
+    0%{ top: 700px}
+    50%{ top: 600px}
+    100%{ top: 700px}
+}
