@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@font-face {
+    font-family:'cereal' ;
+    src: url('Asset/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2') format("truetype");
+}
+@font-face {
+    font-family: 'cereal-bold';
+    src: url('Asset/font/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2') format("truetype"); 
+}
+@font-face {
+    font-family: "cereal-medium";
+    src: url('Asset/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56\ \(1\).woff2') format('truetype');
+}
+
+.airbnb-headerone{
+    
+}
+.header_one{
+    padding: 14px 24px 0 24px;
+}
+.headone{
+    
+    border: 0.5px solid rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    transform: translate3d(0,0,0);
+    border-radius: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headone_header{
+    display: flex;
+    align-items: center;
+}
+.headone-img{
+    padding: 0 16px 0 20px;
+}
+.headone-img img{
+    width: 16px;
+    height: 16px;
+    
+}
+.headone-tab p{
+    font-size: 14px;
+    font-family: "cereal";
+    color: #222222;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+}
+
+.headone-innertab{
+    display: flex;
+}
+.headone-innertab p{
+    font-size: 12px;
+    margin: 0;
+    font-family: "cereal";
+    color: #717171;
+}
+
+.headone-tab{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2px;
+}
+.headone .logo{
+    margin: 0 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 25px;
+    border: 1px solid #717171;
+    margin-top: 9px;
+}
+.logo img{
+    margin-top: 9px;
+    margin-left: 8px;
+}
