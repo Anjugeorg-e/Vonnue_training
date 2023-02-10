@@ -139,7 +139,7 @@ body{
         padding: 0 40px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        
 
     }
     .headtwo-tab{
@@ -169,7 +169,8 @@ body{
     .airbnb_hamburger{
         display: flex;
         align-items: center;
-        padding: 5px 5px 5px 12px;
+        padding: 5px 5px 1px 8px;
+        /*padding: 5px 5px 5px 12px;*/
 
         background-color: #ffffff;
         border: 1px solid #dddddd;
@@ -179,18 +180,20 @@ body{
         padding: 12px;
     }
     .profile img{
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
         margin-left: 12px;
     }
     .headtwo-tab img{
-        background-color: #ff385c;
+        
         width: 12px;
         height: 12px;
         padding: 10px;
+        /*
         border-radius: 50%;
+        background-color: #ff385c;
         z-index: 1;
-        margin: 7px 7px 7px 0;
+        margin: 7px 7px 7px 0;*/
     }
     .headtwo-tab{
 
@@ -204,12 +207,10 @@ body{
     }
     .headtwo-tab p{
         margin: 0;
-        padding:  16px;
-
-     
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        padding: 0 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
           
     }
     .headtwo-tab span{
@@ -222,6 +223,10 @@ body{
     .airbnb_home span{
         padding: 12px;
     }
-
+    .background_mirror{
+        background-color: #ff385c;
+        margin: 7px 7px 7px 0;
+        border-radius: 50%;
+    }
     
 }
