@@ -11,19 +11,18 @@ function pair(x, y) {
         let ret = [[]];    
         for(let i =0; i<x.length; i++)
         {
-          for(let j=0; j<y.length;j++)
+          for(let j=0; j<y.length; j++)
           {     
                 
-                i=j
-                ret[[]]= x[i],y[j]
-                //ret.push()
-                console.log(ret)
+               i=j
+                s= x[i],y[j]
+                ret.push(s)
+             
           }
 }
 }
-
-
 p = pair(x, y);
+console.log(p)
 /*
 function verify(p, t) {
         if (p.length === 0) {
