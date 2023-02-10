@@ -1,29 +1,29 @@
 let x = [1, 2, 3, 4];
 let y = [5, 6, 7, 8];
 let t = [[1,5], [2,6], [3,7], [4,8]];
+let s;
 
 let a = [1, 2, 3, 4];
 let b = [5, 6]
 let c = [[1,5], [2,6], [3], [4]]
 
 function pair(x, y) {
-     //   let ret = [[]];
-          let ret;
-        for(let i =0; i<x.length; i++){
-            let p=x.length;
-             for(let j=0; j<y[p]; j++){
-
-                ret[[i],[j]] = j
-
-             }
-
-
-        }
-        // add your logic here
-        return  ret;
+        let ret = [[]];    
+        for(let i =0; i<x.length; i++)
+        {
+          for(let j=0; j<y.length;j++)
+          {     
+                
+                i=j
+                ret[[]]= x[i],y[j]
+                //ret.push()
+                console.log(ret)
+          }
 }
+}
+
+
 p = pair(x, y);
-console.log(p)
 /*
 function verify(p, t) {
         if (p.length === 0) {
