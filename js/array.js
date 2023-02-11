@@ -27,7 +27,7 @@ console.log(friends);
 const name = ['anju','george',2023-2000,'edoor']//----------possible to declare like this.calculation also will be performed.
 console.log(name)
 
-/////////////////////////////////////////
+///////////////////////////////////////////////////////
 
 const firstName = "anju";
 const lists = [firstName, "geo",23,friends];  // use the prev variable  and also a comb of diff dat atypes
@@ -35,7 +35,7 @@ console.log(lists);
 
 
 //   friends array will print like array[3]..wont show the contents.
-/////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
 
 //we can't pass an array to a function argument .
 
@@ -47,7 +47,7 @@ console.log(years)
 console.log(calcAge(years))
 //////output will be NaN
 
-/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 // to print the output in an array 
 
 const age1 = calcAge(years[0])
