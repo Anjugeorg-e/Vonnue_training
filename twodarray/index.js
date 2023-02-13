@@ -5,22 +5,24 @@ let s;
 
 let a = [1, 2, 3, 4];
 let b = [5, 6]
-let c = [[1,5], [2,6], [3], [4]]
-
+let c = [[1,5], [2,6], [3], [4]];
+let ret = [[]];   
 function pair(x, y) {
-        let ret = [[]];    
+         
         for(let i =0; i<x.length; i++)
         {
           for(let j=0; j<y.length; j++)
-          {     
-                
-               i=j
-                s= x[i],y[j]
+          {           
+              if(i=j)
+                s= [x[i],y[j]]
+                console.log(s)
                 ret.push(s)
-             
+              
           }
 }
 }
+console.log(ret)
+
 p = pair(x, y);
 console.log(p)
 /*
