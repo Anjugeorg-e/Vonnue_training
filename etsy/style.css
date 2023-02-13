@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+   /* border: 1px solid red;  */
 }
 @font-face {
     font-family:'cereal' ;
@@ -17,6 +18,9 @@
 body{
     margin: 0;
 }
+.etsy_headertwo{
+    display: none;
+}
 .etsy_headerone{
     padding: 0 12px;
 }
@@ -31,7 +35,8 @@ body{
     display: flex;
 }
 .etsy_headlogo p{
-    padding: 9px 15px;
+    margin: 0;
+    padding: 17px 15px;
     font-family: "cereal-medium";
     font-size: 13px;
 }
@@ -48,8 +53,7 @@ body{
     margin: 0 0 12px -12px;
 }
 .search_mirror{
-    width: 100%;
-    
+    width: 100%;  
 }
 .search_mirror input{
     position: relative;
@@ -58,11 +62,61 @@ body{
     border: 2px solid #222;
     padding: 13px 80px 13px 18px;
     margin-bottom: 12px;
-    
+    width: 100%;
 }
-
 .search_mirror img{
     position: absolute;
-    top: 71px;
+    top: 61px;
     right: 28px;
+}
+
+@media screen and (min-width: 1024px) {
+    .etsy_headerone{
+        display: none;
+    }
+    .etsy_headertwo{
+        padding: 12px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo_etsy{
+        width: 90px;
+        height: 40px;
+        padding-right: 6px;
+    }
+    .searchmirror_two{
+        width: 100%;
+        padding-right: 82px;
+
+    }
+    .searchmirror_two form{
+       
+    }
+    .searchmirror_two input{
+        background: rgba(34,34,34,.07);
+        border-radius: 96px;
+        border: 2px solid #222;
+        width: 100%;
+        padding: 15px 42px 15px 18px;
+        position: relative;
+    }
+    .searchmirror_two img{
+        position: absolute;
+        top: 28px;
+        right: 249px;
+    }
+    .signin p{
+        margin: 0;
+       
+        font-size: 13px;
+        font-family: "cereal";
+        color: #222222;
+    }
+    .basket_heart{
+        padding: 12px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+
 }
