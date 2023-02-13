@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.etsy_headlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.etsy_headlogo p{
+    padding: 9px 15px;
+}
+.search_mirror input{
+    position: relative;
+    background: rgba(34,34,34,.07);
+    border-radius: 96px;
+    padding: 9px 42px 9px 18px;
+}
+.search_mirror img{
+    position: absolute;
+    top: 1px;
+}
