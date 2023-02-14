@@ -1,3 +1,111 @@
+
+
+//calling the main div of ul from document(html) and assigning to a value
+const navHeader=document.querySelector('.nav_header')  
+//make the html ul to a comment and then 
+//createlemnt   of ul.. for ul,li,p,span and all use create element
+//createattribute----for img src and all use create attribute
+//assign a value also
+const navHeaderLinks = document.createElement('ul')
+
+//for images from svg export download the link take the eaxct size also
+const giftSVG='<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 5 22 12" width="16" height="12" aria-hidden="true" focusable="false"><path d="M5,6A1,1,0,0,0,4,7v3H5v9a1,1,0,0,0,1,1h5V6H5Z"></path><path d="M19,6H13.007A4.245,4.245,0,0,0,14.97,3.744a1.614,1.614,0,0,0-2.65-1.375,1.757,1.757,0,0,0-.315.324,1.753,1.753,0,0,0-.315-0.324A1.615,1.615,0,0,0,9.042,3.746,4.257,4.257,0,0,0,11.006,6H13V20h5a1,1,0,0,0,1-1V10h1V7A1,1,0,0,0,19,6Z"></path></svg>'
+
+//adding the ul to a class of nav_header_links
+
+navHeaderLinks.classList.add("nav_header_links")
+
+//to the main div container navheader , adding the ul class. 
+navHeader.appendChild(navHeaderLinks)
+
+//create a new name and assign the ul classname to  it
+const navheaderUl = document.querySelector(".nav_header_links");
+//create the li objects as an array of objects and give a value
+//for null images give an empty string
+//for  the images taht we need tooa dd mention their name inside img tag
+headerLinks=[
+    {
+        title: "Sellers' Sales Hub",
+        img:'',
+    },
+    {
+        title: "Jewellery & Accessories",
+        img: '',
+    },
+    {
+        title: "Clothing & Shoes",
+        img:'',
+    },
+    {
+        title: "Home & living",
+        img:'',
+    },
+    {
+        title:"Wedding & party",
+        img:'',
+    },
+    {
+        title:"Toys & Entertainment",
+        img:'',
+    },
+    {
+        title:"Art & Collectibles",
+        img:'',
+    },
+    {
+        title:"Craft Supplies",
+        img: giftSVG,
+    },
+]
+
+//always try to insert inside a function
+
+function createNav(){
+    //start a foor loop starting from 0 to till ul link length
+    for (let i = 0; i < headerLinks.length; i++) {
+        //create a li elemennet
+        const headerLi = document.createElement("li");
+        //to the navheader ul ppending the li class
+        navheaderUl.appendChild(headerLi);
+        //if no img we need the title alone
+        if (headerLi.img === "") {
+          headerLi.innerHTML = `${headerLinks[i].title}`;
+          //else we need both img and title
+        }else{
+          headerLi.innerHTML = `${headerLinks[i].img}${headerLinks[i].title}`
+        }
+      }
+      
+}
+//then call th efunction
+createNav()
+
+//we can use the below fun also 
+//here we are using objectlist and taking objectlist as headerlinks ie array of object name
+function createNav(objectList){
+    for (let i = 0; i < objectList.length; i++) {
+        const headerLi = document.createElement("li");
+        navheaderUl.appendChild(headerLi);
+        if (headerLi.img === "") {
+          headerLi.innerHTML = `${objectList[i].title}`;
+        }else{
+          headerLi.innerHTML = `${objectList[i].img}${objectList[i].title}`
+        }
+      }
+      
+}
+createNav(headerLinks)
+
+
+
+
+
+
+
+
+
+
+
 /*var array=[14,12,13];
 var myarray=array[0];
 console.log(myarray);
@@ -33,9 +141,7 @@ console.log(list);
 
 
 
-
-
-
+c
 
 
 /*var name="Anju";

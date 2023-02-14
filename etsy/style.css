@@ -18,7 +18,7 @@
 body{
     margin: 0;
 }
-.etsy_headertwo{
+.etsyheadertwo{
     display: none;
 }
 .etsy_headerone{
@@ -59,19 +59,116 @@ body{
     background: rgba(34,34,34,.07);
     border-radius: 96px;
     border: 2px solid #222;
-    padding: 13px 80px 13px 18px;
+    padding: 13px 80px 12px 18px;
     margin-bottom: 12px;
     width: 100%;
+    font-size: 16px;
 }
 .search_mirror img{
     position: absolute;
     top: 61px;
     right: 28px;
 }
+.discover_items{
+
+    margin-bottom: 42px;
+}
+.discover_items h2{
+    padding: 18px 12px 0;
+    color: #222222;
+    font-size: 20px;
+    font-family: "cereal-light";
+    font-weight: 300;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    background-color: #d7e6f5;
+}
+.subcomponents{
+    margin-top: -234px;
+}
+.subcomponents ul{
+    margin: 0;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6px 6px 0 6px;
+    align-items: center;
+   
+}
+.subcomponents li{
+    font-size: 13px;
+    font-family: "cereal-medium";
+    color: #222222;
+    padding: 6px;
+    align-items: center;
+    text-align: center;
+}
+.subcomponents li img{
+    border-radius: 50%;
+    border: 1px solid rgba(34,34,34,.15);
+    width: 100%;
+    height: 100%;
+    max-width: 96px;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    
+}
+.discover_background{
+    height: 226px;
+    background-color: #d7e6f5 ;
+}
+
+@media screen and (min-width: 375px) {
+    .subcomponents li span{
+        font-size: 13px;
+        margin: 0 4px 6px;
+    }
+    .subcomponents{
+        margin-top: -247px;
+    }
+    .discover_background{
+        height: 226px;
+        background-color: #d7e6f5 ;
+    }
+}
+@media screen and (min-width: 768px) {
+    .subcomponents ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    .subcomponents li img{
+        max-width: 84px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .subcomponents li span{
+        font-size: 13px;
+        /* margin: 0 0 6px;*/
+        text-align: center; 
+        display: inline-block;
+    }
+    .discover_items h2
+    {
+        font-size: 26px;
+    }
+    .subcomponents{
+        margin-top: -92px;
+    }
+    .discover_background{
+        height: 90px;
+        background-color: #d7e6f5 ;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .etsy_headerone{
         display: none;
+    }
+    .etsyheadertwo{
+        display: inline;
     }
     .etsy_headertwo{
         padding: 12px 36px;
@@ -94,11 +191,17 @@ body{
         width: 95%;
         padding: 15px 42px 15px 18px;
         position: relative;
+        font-size: 16px;
     }
     .searchmirror_two img{
         position: absolute;
         top: 26px;
         right: 242px;
+
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 12px;
     }
     .signin{
         white-space: nowrap;
@@ -115,17 +218,83 @@ body{
         margin-left: -2px;
         margin-right: -2px;
     }
-
+    .nav_header{
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .nav_header_links{
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding-left: 0;
+    }
+    .nav_header_links li{
+        list-style-type: none;
+        font-size: 13px;
+        font-family: "cereal";
+        color: #222;
+        line-height: 18px;
+        margin: 4px 12px 0 0;
+        padding: 0 0 12px ;
+    }
+    .gift{
+       display: flex; 
+       align-items: center;
+    }
+    .gift img{
+        width: 16px;
+        height: 12px;
+    }
+    .nav_header_links :last-child{
+        display: flex; 
+        align-items: center;
+    }
+    .discover_items h2
+    {
+        font-size: 32px;
+    }
+    .subcomponents li img{
+        max-width: 114px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     
-    .searchmirror_two img{
-        position: absolute;
-        top: 26px;
-        right: 281px;
+    .searchmirror_two img{   
+    padding-right: 30px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 12px;
+    }
+    .searchmirror_two input{
+        width: 97%;
+        font-size: 16px;
+        font-family: "cereal-medium";
+        font-weight: 100;
+        color: #222;
     }
     .etsy_headertwo{
         margin: 0 20px;
     }
+    .subcomponents{
+        padding: 0 176px;
+    }
+    .subcomponents ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .subcomponents li{
+        padding: 9px 30px;
+    }
+    .subcomponents li span{
+        font-size: 16px;
+        /* margin: 0 0 6px;*/
+        text-align: center; 
+        display: inline-block;
+    }
+   
 }
