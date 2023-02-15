@@ -1,8 +1,10 @@
 *{
     box-sizing: border-box;
+    
 }
 body{
     margin: 0;
+    
 }
 @font-face {
     font-family:'cereal' ;
@@ -85,7 +87,7 @@ body{
     font-size: 9px;
 }
 .listone_ul{
-    padding: 0;
+    padding-left: 24px;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(30, 1fr);
@@ -146,7 +148,9 @@ padding: 6px 5px 0;
     display: none;
 }
 .airbnb_listone{ 
-    box-shadow: rgb(0 0 0 / 16%) 0 0 6px;
+    padding: 0;
+    box-shadow: 0px 15px 10px -15px rgb(0 0 0 / 16%);
+    /* box-shadow: rgb(0 0 0 / 16%) 0 0 6px; */
 }
 .container{
     padding: 0 24px;
@@ -362,15 +366,43 @@ padding: 6px 5px 0;
 }
 .world_rupees h3{
     margin: 0;
+    font-family: "cereal-bold";
+    color: #222222;
 }
 .privacy_terms ul{
     margin: 0;
+    margin-inline-end: 93px;
+    
 }
 .privacy_terms ul li{
     display: inline;
     font-size: 14px;
+    line-height: 1.43;
+   
 }
-
+.privacy_terms ul li span{
+    padding: 0 5px;
+}
+.nav_footer{
+    padding: 0 62px;
+    margin-top: 12px;
+}
+.nav_footer_items{
+    display: flex;
+    justify-content: space-between;
+}
+.explore_wishlist{
+    display: flex;
+    flex-direction: column;
+}
+.explore_wishlist{
+    width: 24px;
+    height: 24px;
+}
+.explore_wishlist span{
+    font-size: 10px;
+    white-space: nowrap;
+}
 
 /*media query*/
 
@@ -589,6 +621,11 @@ padding: 6px 5px 0;
         display: none;
     }
 
+    .nav_footer{
+        display: none;
+    }
+
+
 }
 @media screen and (min-width:778px) {
     .headtwo-tab{
@@ -648,19 +685,25 @@ padding: 6px 5px 0;
     
 }
 
-/*
-@media screen and (min-width: 2560px) {
-    .container{
-        padding: 0 40px;
+
+@media screen and (min-width: 1555px) {
+
+    .airbnb_listone{
+        padding: 20px 80px 0 80px;
+    }
+     .container{
+        padding: 0 80px;
+        margin-top: 0;
         display: grid;
         grid-template-columns: repeat(5,1fr);
         gap: 25px;
-       
-    }
-    .card_mainimage img{
-        min-width: 373px;
-        min-height: 354px;
-    }
-    
 
-}*/
+       
+    } 
+    .card_mainimage img{
+        width: 323px;
+        height: 324px;
+    }
+     
+
+}
