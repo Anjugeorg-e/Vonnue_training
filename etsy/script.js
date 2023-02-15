@@ -50,6 +50,7 @@ function createNav(objectList){
     for (let i = 0; i < objectList.length; i++) {
         const headerLi = document.createElement("li");
         navheaderUl.appendChild(headerLi);
+        headerLi.classList.add("nav_headerli")
         if (headerLi.img === "") {
           headerLi.innerHTML = `${objectList[i].title}`;
         }else{
@@ -94,25 +95,110 @@ const discoverItems=[
 
 const subComponents=document.querySelector('.subcomponents');
 }*/
+
+function creatediscover(objectlist)
+{
 const subComponents=document.querySelector('.subcomponents');
 const subComponentsDiscover=document.createElement("ul")
 subComponents.appendChild(subComponentsDiscover)
 
-for(let i=0;i<discoverItems.length; i++){
-    console.log(discoverItems.length)
+for(let i=0;i<objectlist.length; i++){
+    console.log(objectlist.length)
 
     let discoverLi = document.createElement("li");
     subComponentsDiscover.appendChild(discoverLi);
+    discoverLi.classList.add("discover_li")
 
    
 
     let discoverimg = document.createElement("img");
     discoverLi.appendChild(discoverimg)
-    discoverimg.src = discoverItems[i].imgURL;
+    discoverimg.src = objectlist[i].imgURL;
 
 
     let discoverspan= document.createElement("span");
     discoverLi.appendChild(discoverspan)
-    discoverspan.innerHTML= discoverItems[i].title 
+    discoverspan.innerHTML= objectlist[i].title 
    
 }
+}
+creatediscover(discoverItems)
+
+
+
+const deals=[
+  {
+    image:`https://i.etsystatic.com/22368382/r/il/006d21/4245808662/il_300x300.4245808662_a3x4.jpg`,
+    span:"Upto 40% off on",
+    h3:"Women's Ethnic Clothing",
+  
+  },
+  {
+    image:`https://i.etsystatic.com/32501528/c/1488/1488/0/0/…/23a5b4/3700725057/il_300x300.3700725057_szgj.jpg`,
+    span:"Upto 40% off on",
+    h3:"Women's Western Clothing",
+  },
+  {
+    image:`https://i.etsystatic.com/25566015/c/2003/2003/0/27…/5b71e2/3196479462/il_300x300.3196479462_20xh.jpg`,
+    span:"Upto 40% off on",
+    h3:"Men's Clothing",
+  },
+  {
+    image:`https://i.etsystatic.com/38026977/r/il/f2c1ad/4277525816/il_300x300.4277525816_f4wp.jpg`,
+    span:"Upto 40% off on",
+    h3:"Fashion jewellery",
+  },
+  {
+    image:`https://i.etsystatic.com/32501528/c/1757/1757/247/…/67dc01/4248212322/il_300x300.4248212322_psvv.jpg`,
+    span:"Upto 40% off on",
+    h3:"Winter Clothing",
+  },
+  {
+    image:`https://i.etsystatic.com/23528878/r/il/625e23/2589827894/il_300x300.2589827894_bi5a.jpg`,
+    span:"Upto 40% off on",
+    h3:"Wedding Clothing",
+  },
+]
+
+
+
+function dealsoftheday(objectList)
+{
+const dealsComponent = document.querySelector('.dealscomponent');
+const dealsSubComponent = document.createElement("ul");
+dealsComponent.appendChild(dealsSubComponent)
+// console.log("hai")
+
+
+
+
+for(let i =0; i<objectList.length; i++){
+  // console.log(deals.length)
+
+  let dealsLi= document.createElement("li");
+  dealsSubComponent.appendChild(dealsLi)
+
+  let dealsmaindiv= document.createElement("div")
+  dealsLi.appendChild(dealsmaindiv)
+  dealsmaindiv.classList.add("deals_maindiv");
+
+
+  let dealsimg= document.createElement("img");
+  dealsmaindiv.appendChild(dealsimg);
+  dealsimg.src = objectList[i].image;
+
+  let dealsdiv= document.createElement("div")
+  dealsmaindiv.appendChild(dealsdiv)
+  dealsdiv.classList.add("deals_div");
+
+
+  let dealsspan= document.createElement("span")
+  dealsdiv.appendChild(dealsspan)
+  dealsspan.innerHTML = objectList[i].span;
+
+  let dealsheading= document.createElement("h3");
+  dealsdiv.appendChild(dealsheading)
+  dealsheading.innerHTML = objectList[i].h3;
+}
+}
+dealsoftheday(deals)

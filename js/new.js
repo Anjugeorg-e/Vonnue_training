@@ -103,6 +103,66 @@ createNav(headerLinks)
 
 
 
+const subComponents=document.querySelector('.subcomponents');
+const subComponentsDiscover=document.createElement("ul")
+subComponents.appendChild(subComponentsDiscover)
+
+for(let i=0;i<discoverItems.length; i++){
+    console.log(discoverItems.length)
+
+    let discoverLi = document.createElement("li");
+    subComponentsDiscover.appendChild(discoverLi);
+
+   
+
+    let discoverimg = document.createElement("img");
+    discoverLi.appendChild(discoverimg)
+    discoverimg.src = discoverItems[i].imgURL;
+
+
+    let discoverspan= document.createElement("span");
+    discoverLi.appendChild(discoverspan)
+    discoverspan.innerHTML= discoverItems[i].title 
+}
+
+
+
+const dealsComponent = document.querySelector('.dealscomponent');
+const dealsSubComponent = document.createElement("ul");
+dealsComponent.appendChild(dealsSubComponent)
+// console.log("hai")
+
+
+
+
+for(let i =0; i<deals.length; i++){
+  // console.log(deals.length)
+
+  let dealsLi= document.createElement("li");
+  dealsSubComponent.appendChild(dealsLi)
+
+  let dealsmaindiv= document.createElement("div")
+  dealsLi.appendChild(dealsmaindiv)
+  dealsmaindiv.classList.add("deals_maindiv");
+
+
+  let dealsimg= document.createElement("img");
+  dealsmaindiv.appendChild(dealsimg);
+  dealsimg.src = deals[i].image;
+
+  let dealsdiv= document.createElement("div")
+  dealsmaindiv.appendChild(dealsdiv)
+  dealsdiv.classList.add("deals_div");
+
+
+  let dealsspan= document.createElement("span")
+  dealsdiv.appendChild(dealsspan)
+  dealsspan.innerHTML = deals[i].span;
+
+  let dealsheading= document.createElement("h3");
+  dealsdiv.appendChild(dealsheading)
+  dealsheading.innerHTML = deals[i].h3;
+}
 
 
 
