@@ -331,9 +331,8 @@
 }
 
 .tab-links a:hover {
-    border: 1px dashed #0078D4;
-    color: #0078D4;
-    border-bottom: 4px solid #0078D4;
+    background-color: #dcdcdc;
+    color: #4c4c51;
 }
 
 .tab-button {
@@ -540,7 +539,7 @@
     padding: 24px 24px 0;
 }
 
-.space {
+.hybrid_box {
     padding: 16px 24px 24px;
 }
 
@@ -1193,10 +1192,8 @@ img.twitter {
         cursor: pointer;
     }
     .tab-links a:hover {
-        color: #0067b8;
-        border-bottom: none;
-        border: 2px dashed #0067b8;
-        border-left: 4px solid #0067b8;
+        background-color: #dcdcdc;
+        color: #4c4c51;
     }
     .cards-settwo {
         margin-inline-start: -17px;
@@ -1374,9 +1371,9 @@ img.twitter {
     }
     .footertwo_nav li {
         font-size: 12px;
+        font-family: "cereal-bold";
         color: #1A1A1F;
         padding: 2px 0;
-        font-family: "cereal-bold";
         margin-top: 12px;
     }
     .dropdown_cultures {
@@ -1488,7 +1485,6 @@ img.twitter {
     }
     #mainone {
         margin: 0;
-        padding: 54px;
         background-image: url(Asset/img/Desktop\ hero.jpeg);
         background-repeat: no-repeat;
         background-position: center;
@@ -1496,7 +1492,7 @@ img.twitter {
         background-size: cover;
         width: 100%;
         height: 100%;
-        padding-bottom: 42px;
+        padding: 54px 54px 42px 54px;
     }
     .mainone-two {
         padding: 48px 48px;
@@ -1510,8 +1506,7 @@ img.twitter {
         margin-top: -9px;
     }
     #mainone h2 {
-        margin: 0 0 20px;
-        margin-top: 3px;
+        margin: 3px 0 20px 0;
         font-size: 37px;
         padding-top: 3px;
     }
@@ -1557,7 +1552,6 @@ img.twitter {
         position: relative;
     }
     .tab-panel-container {
-        padding: 0 12px;
         padding-left: 5%;
         padding-right: 5%;
         position: absolute;
@@ -1579,7 +1573,6 @@ img.twitter {
 @media screen and (min-width: 1024px) {
     .tab-links a:hover {
         background-color: #dcdcdc;
-        border: 0px solid transparent;
         color: #4c4c51;
     }
 
@@ -1601,11 +1594,12 @@ img.twitter {
     }
     .video_game {
         position: absolute;
+        top: 97px;
         padding-left: 5%;
         padding-right: 2%;
         margin-left: 5%;
         width: 52%;
-        top: 97px;
+       
     }
     .video_game p {
         font-size: 21px;
