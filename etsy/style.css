@@ -234,7 +234,14 @@ body{
     font-family: "cereal";
     font-size: 18px;
 }
-
+.container_gifts{
+    padding: 0 12px;
+}
+.container_gifts img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
 
 @media screen and (min-width: 375px) {
     .subcomponents li span{

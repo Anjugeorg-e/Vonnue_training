@@ -124,8 +124,6 @@ for(let i=0;i<objectlist.length; i++){
 }
 creatediscover(discoverItems)
 
-
-
 const deals=[
   {
     image:`https://i.etsystatic.com/22368382/r/il/006d21/4245808662/il_300x300.4245808662_a3x4.jpg`,
@@ -139,7 +137,7 @@ const deals=[
     h3:"Women's Western Clothing",
   },
   {
-    image:`https://i.etsystatic.com/25566015/c/2003/2003/0/27…/5b71e2/3196479462/il_300x300.3196479462_20xh.jpg`,
+    image:`https://i.etsystatic.com/25566015/c/2003/2003/0/274/il/5b71e2/3196479462/il_300x300.3196479462_20xh.jpg`,
     span:"Upto 40% off on",
     h3:"Men's Clothing",
   },
@@ -149,7 +147,7 @@ const deals=[
     h3:"Fashion jewellery",
   },
   {
-    image:`https://i.etsystatic.com/32501528/c/1757/1757/247/…/67dc01/4248212322/il_300x300.4248212322_psvv.jpg`,
+    image:`https://i.etsystatic.com/32501528/c/1757/1757/247/180/il/67dc01/4248212322/il_300x300.4248212322_psvv.jpg`,
     span:"Upto 40% off on",
     h3:"Winter Clothing",
   },
@@ -159,18 +157,12 @@ const deals=[
     h3:"Wedding Clothing",
   },
 ]
-
-
-
 function dealsoftheday(objectList)
 {
 const dealsComponent = document.querySelector('.dealscomponent');
 const dealsSubComponent = document.createElement("ul");
 dealsComponent.appendChild(dealsSubComponent)
 // console.log("hai")
-
-
-
 
 for(let i =0; i<objectList.length; i++){
   // console.log(deals.length)
@@ -182,7 +174,6 @@ for(let i =0; i<objectList.length; i++){
   dealsLi.appendChild(dealsmaindiv)
   dealsmaindiv.classList.add("deals_maindiv");
 
-
   let dealsimg= document.createElement("img");
   dealsmaindiv.appendChild(dealsimg);
   dealsimg.src = objectList[i].image;
@@ -190,7 +181,6 @@ for(let i =0; i<objectList.length; i++){
   let dealsdiv= document.createElement("div")
   dealsmaindiv.appendChild(dealsdiv)
   dealsdiv.classList.add("deals_div");
-
 
   let dealsspan= document.createElement("span")
   dealsdiv.appendChild(dealsspan)
@@ -202,3 +192,12 @@ for(let i =0; i<objectList.length; i++){
 }
 }
 dealsoftheday(deals)
+
+
+const popularGifts=[
+  {
+    image:`https://i.etsystatic.com/35966576/c/1614/1283/669/351/il/e1510f/4033777789/il_340x270.4033777789_dqlw.jpg`,
+    h3:"Birth Flower jewelry ,Travel case,Birth MOnth Flower Gift,...",
+    
+  }
+]
