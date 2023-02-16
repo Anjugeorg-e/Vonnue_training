@@ -131,10 +131,6 @@ body{
 
 }
 
-
-
-
-
 .container_deals{
     /* padding: 0 12px; */
     padding: 0 9px;
@@ -181,8 +177,6 @@ body{
     height: 50%; */
    
 }
-
-
 
 .dealscomponent ul li:hover{
     cursor: pointer;
@@ -240,8 +234,85 @@ body{
 .container_gifts img{
     width: 100%;
     height: 100%;
-    border-radius: 2px;
+    border-radius: 6px;
 }
+.gifts_componentul{
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.gifts_componentli{
+    list-style-type: none;
+    padding: 6px;
+}
+.gifts_componentli:hover{
+    box-shadow: 0 2px 18px rgb(34 34 34 / 20%);
+    background: #fff;
+    border: 1px dotted rgba(0,0,0,0);
+}
+.gifts_heading{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    font-weight: 700;
+    font-family: "cereal";
+    font-size: 13px;
+    text-overflow: ellipsis;
+    margin: 0 0 3px;
+    line-height: 18px;
+    letter-spacing: .1px; 
+    overflow: hidden;
+    padding: 0;
+   
+    /* white-space: normal;
+    margin-bottom: 3px; */
+}
+.popular_div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gifts_div{
+   
+}
+
+.free_delivery{
+    font-size: 11px;
+    font-weight: bold;
+    background: #d4e9d7;
+    border-radius: 15px;
+   
+    /* padding: 3px 6px; */
+}
+
+.star_rating{
+    color: #595959;
+    font-size: 13px;
+   
+   
+}
+.actual_price{
+    color: #258635;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "cereal-light";
+    padding-right: 8px;
+    
+}
+.discount_price{
+    color: #258635;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: "cereal-light";
+    
+}
+.new_price{
+    font-family: "cereal";
+    font-size: 16px;
+    color: #222222;
+    padding-right: 75px;
+}
+
 
 @media screen and (min-width: 375px) {
     .subcomponents li span{
@@ -319,7 +390,15 @@ body{
     .deals_maindiv{
         border: 0px;
     }
-
+    .container_gifts{
+        padding: 0 24px 60px;
+    }
+    .gifts_componentul{
+        padding-left: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
 
 }
 
@@ -426,7 +505,19 @@ body{
         display: flex;
       
     }
-}
+
+    .gifts_componentul{
+        padding-left: 0;
+        display: flex;
+     
+        
+    }
+    .gifts_componentul:nth-last-child(2)
+    {
+        
+        display: hidden;
+    }
+    
 
 @media screen and (min-width: 1440px) {
     
@@ -469,4 +560,4 @@ body{
         margin: 0 auto;
     }
    
-}
+}}
