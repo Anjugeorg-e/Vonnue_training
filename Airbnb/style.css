@@ -1,10 +1,8 @@
 *{
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 body{
-    margin: 0;
-    
+    margin: 0; 
 }
 @font-face {
     font-family:'cereal' ;
@@ -100,7 +98,7 @@ body{
 .airbnb_listone{
     padding: 0 24px;
     box-shadow: 0 5px 5px -5px rgb(0 0 0 / 16%);;
-    /* box-shadow: rgb(0 0 0 / 16%) 0 0 6px; */
+   
 }
 .listone_ul li img{
     width: 24px;
@@ -112,8 +110,6 @@ body{
     font-family: "cereal-medium";
     font-size: 12px;
     margin-top: 12px;
-   /* margin: 12px 0 10px; */
-   /* padding: 4px 0; */
     list-style-type: none;
     text-align: center;
     color: #717171;
@@ -153,8 +149,6 @@ padding: 6px 5px 0;
 }
 .airbnb_listone{ 
     padding: 0;
-    /* box-shadow: 0px 15px 10px -15px rgb(0 0 0 / 16%); */
-    /* box-shadow: rgb(0 0 0 / 16%) 0 0 6px; */
 }
 .container{
     padding: 0 24px;
@@ -172,6 +166,11 @@ padding: 6px 5px 0;
     margin-bottom: 12px;
     min-height: 258px;
 }
+.new_pointer{
+    font-size: 62px;
+    position: absolute;
+    color: #fff;
+}
 
 .rating_fav{
     width: 25px;
@@ -183,7 +182,6 @@ padding: 6px 5px 0;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 40px;
-
     margin-block-end: 24px;
 }
 .card_subdiv_rating{
@@ -194,9 +192,9 @@ padding: 6px 5px 0;
 }
 .card_subdiv_rating h4{
     font-family: "cereal";
-    margin: 0;
     font-size: 15px;
     color: #222222;
+    margin: 0;
 }
 
 .card_rating img{
@@ -245,15 +243,15 @@ padding: 6px 5px 0;
     margin-top: 56px;
     font-family: "cereal";
     font-size: 18px;
-    line-height: 22px;
     font-weight: 600;
+    line-height: 22px;
 
 }
 .button_showmore{
-    margin-top: 24px;
-    margin-bottom: 80px;
     display: flex;
     justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 80px;
 
 }
 .button_showmore button{
@@ -278,9 +276,7 @@ padding: 6px 5px 0;
 }
 .airbnb_gateway ul li:nth-child(1){
     margin-left: -51px;
-    color: #222222;
-    /* border-bottom: 2px solid #222222; */
- 
+    color: #222222; 
 }
 .airbnb_gateway ul li:nth-child(2){
     color: #717171;
@@ -295,7 +291,6 @@ padding: 6px 5px 0;
     margin: 6px 6px 6px 0;
     font-family: "cereal";
     font-size: 14px;
-    
 }
 
 .gateway_categories{
@@ -351,7 +346,6 @@ padding: 6px 5px 0;
     margin: 12px 0 0;
 }
  .footer_sitedetails{
-    /* border-top: 1px solid #dddddd; */
     padding: 24px 0;
 } 
 .footer_chooselanguage{
@@ -523,11 +517,12 @@ padding: 6px 5px 0;
         font-family: "cereal-medium";
     }
     .headertwo_subhead{
-        padding: 0 40px;
         display: flex;
         justify-content: space-between;
+        /* padding: 0 40px;
         padding-top: 14px;
-        padding-bottom: 15px;
+        padding-bottom: 15px; */
+        padding:  14px 40px 15px 40px;
         box-shadow: rgb(0 0 0 / 8%) 0 1px 0;
     }
     .headtwo-tab{
@@ -677,23 +672,18 @@ padding: 6px 5px 0;
     .footertwo{
         display: none;
     }
-
-
-
     .nav_footer{
         display: none;
     }
     .footer_map{
         display: none;
     }
-
     .footer_mapone{
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
         bottom: 0;
-        
     }
     .footer_mapone button{
         border-radius: 24px;
@@ -703,7 +693,6 @@ padding: 6px 5px 0;
         padding: 14px 19px;
         font-family: "cereal";
         font-size: 14px;
-       
     }
     .onemap_image{
         margin-inline-start: 320px;
@@ -724,7 +713,7 @@ padding: 6px 5px 0;
         position: fixed;
         bottom: 0;
         background-color: #ffffff;
-
+        height: 7%;
     }
     .privacy_termsone{
         font-family: "cereal";
@@ -778,9 +767,13 @@ padding: 6px 5px 0;
 .world_logo_footerone{
     margin: 0 8px;
 }
-
-
-
+.headertwo_subhead{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+}
 }
 @media screen and (min-width:778px) {
     .headtwo-tab{
@@ -809,6 +802,16 @@ padding: 6px 5px 0;
     .onemap_image{
         margin-inline-start: 451px;
     }
+     .airbnb_finaldiv{
+        width: 100%;
+        height: 5%;
+        justify-content: space-between;
+        padding: 13px 40px 14px;
+    }
+    .footer_rupeesone h4{
+        margin: 0;
+    }
+
     
 }
 @media screen and (min-width: 1440px) {
@@ -831,7 +834,6 @@ padding: 6px 5px 0;
         margin-inline-start: 131px;
     }
     .container{
-        padding: 0 40px;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 25px;
@@ -844,18 +846,28 @@ padding: 6px 5px 0;
     .onemap_image{
         margin-inline-start: 657px;
     }
-  
-    
+     .airbnb_finaldiv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+ 
 }
-
-
 @media screen and (min-width: 1555px) {
 
+    .header_price{
+        margin-inline-start: -12px;
+        transform: translate(-1px, 1px);
+    }
+    .airbnb_home_hamburger{
+        transform: translateX(-15px);
+    }
     .airbnb_listone{
         padding: 20px 80px 0 80px;
     }
      .container{
-        padding: 0 80px;
+        padding: 10px 80px;
         margin-top: 0;
         display: grid;
         grid-template-columns: repeat(5,1fr);
@@ -869,6 +881,7 @@ padding: 6px 5px 0;
         margin-inline-start: 906px;
        
     }
+    
   
   
 }
