@@ -3,6 +3,12 @@ const giftSVG =
   '<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 5 22 12" width="16" height="12" aria-hidden="true" focusable="false"><path d="M5,6A1,1,0,0,0,4,7v3H5v9a1,1,0,0,0,1,1h5V6H5Z"></path><path d="M19,6H13.007A4.245,4.245,0,0,0,14.97,3.744a1.614,1.614,0,0,0-2.65-1.375,1.757,1.757,0,0,0-.315.324,1.753,1.753,0,0,0-.315-0.324A1.615,1.615,0,0,0,9.042,3.746,4.257,4.257,0,0,0,11.006,6H13V20h5a1,1,0,0,0,1-1V10h1V7A1,1,0,0,0,19,6Z"></path></svg>';
 const halfstar = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path class="background" d="M12.007 16.97l4.21 2.95c.182.12.422.11.592-.027.17-.138.23-.37.15-.574l-1.484-5.33 4.306-3.073c.182-.12.265-.347.203-.557-.065-.21-.258-.352-.477-.352h-5.35l-1.67-5.642c-.06-.215-.257-.363-.48-.363-.225 0-.42.148-.482.363v12.94l.48-.335z" fill="#E1E3DF"></path><path class="foreground" d="M12 4c-.224 0-.42.15-.48.366l-1.67 5.642H4.5c-.218.002-.41.145-.472.354-.064.208.014.433.193.557l4.307 3.07-1.5 5.33c-.08.202-.02.433.15.57.17.14.41.15.59.03L12 16.98V4z" fill="#222222"></path></svg>`;
 
+const playimg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="4 4 4 20 20 12 4 4"></polygon></svg>`;
+
+const whiteHeartImg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z" fill="#222222"></path></svg>`;
+
+const redHeartImg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z" fill="#A61A2E"></path></svg>`;
+
 const navHeaderLinks = document.createElement("ul");
 navHeaderLinks.classList.add("nav_header_links");
 navHeader.appendChild(navHeaderLinks);
@@ -190,10 +196,11 @@ const popularGifts = [
     actualprice: 1709,
     discount: 50,
     deliverytype: "",
-    type:"image",
+    type: "image",
+    videourl: "",
   },
   {
-    img: `https://i.etsystatic.com/32477306/c/2000/1589/0/256/il/0bcd64/3491080620/il_340x270.3491080620_oh18.jpg`,
+    img: `https://i.etsystatic.com/24512514/r/il/066b08/3699852893/il_340x270.3699852893_pkjb.jpg`,
     h3: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
@@ -202,7 +209,8 @@ const popularGifts = [
     actualprice: 1452,
     discount: 50,
     deliverytype: "",
-    type:"video",
+    type: "image",
+    videourl: "",
   },
   {
     img: `https://i.etsystatic.com/25168585/c/2500/1987/0/181/il/214e7e/4589233930/il_340x270.4589233930_dg79.jpg`,
@@ -214,7 +222,9 @@ const popularGifts = [
     actualprice: 3296,
     discount: 50,
     deliverytype: "FREE delivery",
-    type:"image",
+    type: "video",
+    videourl:
+      "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/PAINT_PORTRAIT_ETSY_VIDEO_vo9waf.mp4",
   },
   {
     img: `https://i.etsystatic.com/27890741/c/2343/1862/320/560/il/31a0dd/4028709894/il_340x270.4028709894_i6tr.jpg`,
@@ -226,8 +236,9 @@ const popularGifts = [
     actualprice: 1278,
     discount: 40,
     deliverytype: "",
-    type:"video",
-   
+    type: "video",
+    videourl:
+      "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4",
   },
   {
     img: `https://i.etsystatic.com/28045281/r/il/3f41fa/3897994052/il_340x270.3897994052_l8xd.jpg`,
@@ -239,7 +250,8 @@ const popularGifts = [
     actualprice: 4695,
     discount: 50,
     deliverytype: "FREE delivery",
-    type:"image",
+    type: "image",
+    videourl: "",
   },
   {
     img: `https://i.etsystatic.com/26694795/c/2445/1943/282/0/il/035b01/3254592822/il_340x270.3254592822_5dss.jpg`,
@@ -251,132 +263,148 @@ const popularGifts = [
     actualprice: 1539,
     discount: 60,
     deliverytype: "",
-    type:"video",
+    type: "video",
+    videourl:
+      "https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/PB-42_convert-video-online.com_cfle3f.mp4",
   },
 ];
 
-function popularGiftsofday(){
+function popularGiftsofday() {
+  const containerGifts = document.querySelector(".container_gifts");
+  const giftsComponent = document.createElement("ul");
+  giftsComponent.classList.add("gifts_componentul");
+  containerGifts.appendChild(giftsComponent);
 
-const containerGifts = document.querySelector(".container_gifts");
-const giftsComponent = document.createElement("ul");
-giftsComponent.classList.add("gifts_componentul")
-containerGifts.appendChild(giftsComponent);
+  for (let i = 0; i < popularGifts.length; i++) {
+    const giftsLi = document.createElement("li");
+    giftsComponent.appendChild(giftsLi);
+    giftsLi.classList.add("gifts_componentli");
 
-for (let i = 0; i < popularGifts.length; i++) {
-  const giftsLi = document.createElement("li");
-  giftsComponent.appendChild(giftsLi);
-  giftsLi.classList.add("gifts_componentli")
+    let giftsMainDiv = document.createElement("div");
+    giftsLi.appendChild(giftsMainDiv);
+    giftsMainDiv.classList.add("gifts_maindiv");
 
-  let giftsMainDiv = document.createElement("div");
-  giftsLi.appendChild(giftsMainDiv);
-  giftsMainDiv.classList.add("gifts_maindiv");
+    let imgContainer = document.createElement("div");
+    giftsMainDiv.appendChild(imgContainer);
+    imgContainer.classList.add("img_container");
 
-  let giftsimg = document.createElement("img");
-  giftsMainDiv.appendChild(giftsimg);
-  giftsimg.src = popularGifts[i].img;
+    let giftsdiv = document.createElement("div");
+    giftsMainDiv.appendChild(giftsdiv);
+    giftsdiv.classList.add("gifts_div");
 
-  let giftsdiv = document.createElement("div");
-  giftsMainDiv.appendChild(giftsdiv);
-  giftsdiv.classList.add("gifts_div");
+    let giftsheading = document.createElement("h3");
+    giftsdiv.appendChild(giftsheading);
+    giftsheading.classList.add("gifts_heading");
+    giftsheading.innerHTML = popularGifts[i].h3;
 
-  let giftsheading = document.createElement("h3");
-  giftsdiv.appendChild(giftsheading);
-  giftsheading.classList.add("gifts_heading")
-  giftsheading.innerHTML = popularGifts[i].h3;
+    let NumberStar = popularGifts[i].starcount;
+    function starRow(NumberStar) {
+      if (NumberStar == 5) {
+        for (let j = 1; j <= NumberStar; j++) {
+          let giftsRating = document.createElement("span");
+          giftsdiv.appendChild(giftsRating);
 
+          giftsRating.innerHTML = popularGifts[i].star;
+        }
+      } else {
+        for (let j = 1; j < NumberStar; j++) {
+          let giftfourRating = document.createElement("span");
+          giftsdiv.appendChild(giftfourRating);
 
-
-  let NumberStar = popularGifts[i].starcount;
-  function starRow(NumberStar) 
-  {
-    if (NumberStar == 5) 
-    {
-      for (let j = 1; j <= NumberStar; j++) 
-      {
-        let giftsRating = document.createElement("span");
-        giftsdiv.appendChild(giftsRating);
-      
-        giftsRating.innerHTML = popularGifts[i].star;
-
+          giftfourRating.innerHTML = popularGifts[i].star;
+        }
+        let gifthalffourRating = document.createElement("span");
+        giftsdiv.appendChild(gifthalffourRating);
+        gifthalffourRating.classList.add("star_rating");
+        gifthalffourRating.innerHTML = halfstar;
       }
-    } else 
-    {
-      for (let j = 1; j < NumberStar; j++) 
-      {
-        let giftfourRating = document.createElement("span");
-        giftsdiv.appendChild(giftfourRating);
-       
-        giftfourRating.innerHTML = popularGifts[i].star;
-     
-      }
-      let gifthalffourRating = document.createElement("span");
-      giftsdiv.appendChild(gifthalffourRating);
-      gifthalffourRating.classList.add("star_rating")
-      gifthalffourRating.innerHTML = halfstar;
-    
     }
+    starRow(NumberStar);
+
+    let starRating = document.createElement("div");
+    giftsdiv.appendChild(starRating);
+    starRating.innerHTML = popularGifts[i].rating;
+    starRating.classList.add("star_rating");
+
+    let popularDiv = document.createElement("div");
+    giftsdiv.appendChild(popularDiv);
+    popularDiv.classList.add("popular_div");
+
+    let newPrice = document.createElement("span");
+    popularDiv.appendChild(newPrice);
+    newPrice.innerHTML =
+      "₹" + rateOfItem(popularGifts[i].actualprice, popularGifts[i].discount);
+    newPrice.classList.add("new_price");
+
+    let actualPrice = document.createElement("span");
+    popularDiv.appendChild(actualPrice);
+    actualPrice.innerHTML = "₹" + popularGifts[i].actualprice;
+    actualPrice.classList.add("actual_price");
+
+    let discountValue = document.createElement("span");
+    popularDiv.appendChild(discountValue);
+    discountValue.innerHTML = "(" + popularGifts[i].discount + "%  off" + ")";
+    discountValue.classList.add("discount_price");
+
+    function rateOfItem(actualPrice, discountValue) {
+      let newRate;
+      newRate = Math.round((actualPrice / 100) * discountValue);
+
+      console.log(newRate);
+      return newRate;
+    }
+    const DeliveryType = document.createElement("span");
+    giftsdiv.appendChild(DeliveryType);
+    DeliveryType.innerHTML = popularGifts[i].deliverytype;
+    DeliveryType.classList.add("free_delivery");
+
+    if (popularGifts[i].type === "video") {
+      let giftsvideo = document.createElement("video");
+      imgContainer.appendChild(giftsvideo);
+      giftsvideo.src = popularGifts[i].videourl;
+      giftsvideo.classList.add("gifts_video");
+
+      giftsvideo.addEventListener("mouseenter", () => {
+        giftsvideo.autoplay = false;
+        giftsvideo.muted = "muted";
+        giftsvideo.play();
+      });
+      giftsvideo.addEventListener("mouseleave", () => {
+        giftsvideo.pause();
+        giftsvideo.currentTime = 0;
+      });
+    } else if (popularGifts[i].type === "image") {
+      let giftsimg = document.createElement("img");
+      imgContainer.appendChild(giftsimg);
+      giftsimg.src = popularGifts[i].img;
+    }
+
+    // let whitebackground = document.createElement("div");
+    // imgContainer.appendChild(whitebackground);
+    // whitebackground.classList.add("white_background");
+
+    
+    let wheartimg = document.createElement("span");
+    imgContainer.appendChild(wheartimg);
+    wheartimg.classList.add("whiteheart");
+    wheartimg.innerHTML = whiteHeartImg;
+
+
+    let rheartimg = document.createElement("span");
+    wheartimg.addEventListener("click", () => {
+      imgContainer.appendChild(rheartimg);
+      rheartimg.classList.add("redheart");
+      rheartimg.innerHTML = redHeartImg;
+    });
+    
+
+    
+
+    // wheartimg.addEventListener("ondbclick", () => {
+    //   let wheartimg = document.createElement("span");
+    //   imgContainer.appendChild(wheartimg);
+    //   wheartimg.innerHTML = whiteHeartImg;
+    // })
   }
-  starRow(NumberStar);
-
-
-  let starRating = document.createElement("div");
-  giftsdiv.appendChild(starRating);
-  starRating.innerHTML = popularGifts[i].rating;
-  starRating.classList.add("star_rating")
-
-
-  let popularDiv=document.createElement("div")
-  giftsdiv.appendChild(popularDiv)
-  popularDiv.classList.add("popular_div")
-
-  let newPrice = document.createElement("span");
-  popularDiv.appendChild(newPrice);
-  newPrice.innerHTML ="₹" + rateOfItem(popularGifts[i].actualprice, popularGifts[i].discount);
-  newPrice.classList.add("new_price")
-
-  let actualPrice = document.createElement("span");
-  popularDiv.appendChild(actualPrice);
-  actualPrice.innerHTML = "₹" + popularGifts[i].actualprice;
-  actualPrice.classList.add("actual_price")
-
-  let discountValue = document.createElement("span");
-  popularDiv.appendChild(discountValue);
-  discountValue.innerHTML = "(" + popularGifts[i].discount + "%  off" + ")";
-  discountValue.classList.add("discount_price")
-
-  function rateOfItem(actualPrice, discountValue) 
-  {
-    let newRate;
-    newRate = Math.round((actualPrice / 100) * discountValue);
-
-    console.log(newRate);
-    return newRate;
-  }
-
- const DeliveryType=document.createElement("span");
- giftsdiv.appendChild(DeliveryType)
- DeliveryType.innerHTML=popularGifts[i].deliverytype;
- DeliveryType.classList.add("free_delivery")
-
 }
-}
-popularGiftsofday(popularGifts)
-
-
-
-
-
-
-
-// src="https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/PAINT_PORTRAIT_ETSY_VIDEO_vo9waf.mp4"
-
-// src="https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/HFF_Hearts_Video_m6nj4t.mp4"
-
-// src="https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/PB-42_convert-video-online.com_cfle3f.mp4
-
-
-
-if(type==="video"){
-
-  
-}
+popularGiftsofday(popularGifts);

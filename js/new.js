@@ -313,6 +313,32 @@ const popularGifts = [
    giftsdiv.appendChild(DeliveryType)
    DeliveryType.innerHTML=popularGifts[i].deliverytype;
 
+
+
+    // for(let p=0;p<5;p++){
+
+    //   let wheartimg = document.createElement("span");
+    //   imgContainer.appendChild(wheartimg);
+    //   wheartimg.classList.add("whiteheart");
+    //   wheartimg.innerHTML = whiteHeartImg;
+    //   let  state=0;
+    
+    //   if(state === 0){
+        
+    //     let rheartimg = document.createElement("span");
+    //     wheartimg.addEventListener("click", () => {
+    //       imgContainer.appendChild(rheartimg);
+    //       rheartimg.innerHTML = redHeartImg;
+    //       state=1
+    //     });
+        
+    //   }else if(state === 1){
+
+    //     let wheartimg = document.createElement("span");
+    //     imgContainer.appendChild(wheartimg);
+    //     wheartimg.innerHTML = whiteHeartImg;
+    //   }
+
 /*var array=[14,12,13];
 var myarray=array[0];
 console.log(myarray);
