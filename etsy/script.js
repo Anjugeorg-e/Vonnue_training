@@ -378,27 +378,33 @@ function popularGiftsofday() {
       imgContainer.appendChild(giftsimg);
       giftsimg.src = popularGifts[i].img;
     }
-
-    // let whitebackground = document.createElement("div");
-    // imgContainer.appendChild(whitebackground);
-    // whitebackground.classList.add("white_background");
-
-    
     let wheartimg = document.createElement("span");
     imgContainer.appendChild(wheartimg);
     wheartimg.classList.add("whiteheart");
     wheartimg.innerHTML = whiteHeartImg;
-
-
     let rheartimg = document.createElement("span");
-    wheartimg.addEventListener("click", () => {
-      imgContainer.appendChild(rheartimg);
-      rheartimg.classList.add("redheart");
-      rheartimg.innerHTML = redHeartImg;
-    });
-    
 
-    
+    let  state=0;
+    {
+      wheartimg.addEventListener("click", () => {
+
+          if(state === 0)
+          { 
+          console.log("state0")
+          wheartimg.innerHTML = redHeartImg;
+          state=1
+          }
+          else {
+            wheartimg.innerHTML = whiteHeartImg;
+            state=0;
+            console.log("state1")
+          }
+        });
+        
+
+      }
+
+
 
     // wheartimg.addEventListener("ondbclick", () => {
     //   let wheartimg = document.createElement("span");
@@ -408,3 +414,39 @@ function popularGiftsofday() {
   }
 }
 popularGiftsofday(popularGifts);
+
+
+// const navItems=[
+// {
+//   item:"Shop",
+// },
+// {
+//   item:" Sell",
+// },
+// {
+//   item:"About",
+// },
+// {
+//   item:"Help",
+// },
+// ]
+
+// const footerNav=document.querySelector('.label_container')
+
+// const footerNavUl = document.createElement("ul");
+// footerNavUl.classList.add("footer_navul");
+// footerNav.appendChild(footerNavUl);
+
+// for (let k = 0; k < navItems.length; k++) {
+//   const footernavli = document.createElement("li");
+//   footerNavUl.appendChild(footernavli);
+//   footernavli.classList.add("footer_navli");
+
+//   let footeritems = document.createElement("span");
+//   footernavli.appendChild(footeritems);
+//   footeritems.innerHTML = navItems[k].item;
+
+
+
+
+// }

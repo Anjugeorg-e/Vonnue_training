@@ -315,29 +315,45 @@ const popularGifts = [
 
 
 
-    // for(let p=0;p<5;p++){
+    for(let p=0;p<5;p++){
 
-    //   let wheartimg = document.createElement("span");
-    //   imgContainer.appendChild(wheartimg);
-    //   wheartimg.classList.add("whiteheart");
-    //   wheartimg.innerHTML = whiteHeartImg;
-    //   let  state=0;
+      let wheartimg = document.createElement("span");
+      imgContainer.appendChild(wheartimg);
+      wheartimg.classList.add("whiteheart");
+      wheartimg.innerHTML = whiteHeartImg;
+      let  state=0;
     
-    //   if(state === 0){
-        
-    //     let rheartimg = document.createElement("span");
-    //     wheartimg.addEventListener("click", () => {
-    //       imgContainer.appendChild(rheartimg);
-    //       rheartimg.innerHTML = redHeartImg;
-    //       state=1
-    //     });
-        
-    //   }else if(state === 1){
+   
+        let rheartimg = document.createElement("span");
+        wheartimg.addEventListener("click", () => {
 
-    //     let wheartimg = document.createElement("span");
-    //     imgContainer.appendChild(wheartimg);
-    //     wheartimg.innerHTML = whiteHeartImg;
-    //   }
+          if(state === 0)
+          {
+          imgContainer.appendChild(rheartimg);
+          rheartimg.innerHTML = redHeartImg;
+          state=1
+          }
+          else {
+
+            let wheartimg = document.createElement("span");
+            imgContainer.appendChild(wheartimg);
+            wheartimg.innerHTML = whiteHeartImg;
+            state=0;
+          }
+
+
+        });
+        
+      // }else {
+
+      //   let wheartimg = document.createElement("span");
+      //   imgContainer.appendChild(wheartimg);
+      //   wheartimg.innerHTML = whiteHeartImg;
+      // }
+
+    }
+
+
 
 /*var array=[14,12,13];
 var myarray=array[0];
