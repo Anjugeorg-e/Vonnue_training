@@ -441,6 +441,9 @@ padding: 6px 5px 0;
     display: none;
 }
 
+
+
+
 /*media query*/
 
 @media screen and (min-width: 375px) {
@@ -463,6 +466,11 @@ padding: 6px 5px 0;
     .map_image{
         margin-inline-start: 156px;
        
+    }
+    .privacy_terms ul{
+        margin: 0;
+        margin-inline-end: 0px;
+        
     }
 }
 
@@ -724,6 +732,7 @@ padding: 6px 5px 0;
         padding: 13px 40px 14px;
         display: flex;
         align-items: center;
+        height: 85px;
     }
     .privacy_termsone li{
         list-style-type: none;
@@ -732,6 +741,7 @@ padding: 6px 5px 0;
   .privacy_termsone ul{
     display: flex;
     padding-left: 0; 
+    align-items: center;
 }
 .world_rupeesone h4{
     margin: 0;
@@ -757,6 +767,8 @@ padding: 6px 5px 0;
 }
 .footer_rupeesone{
     display: flex;
+    align-items: center;
+    white-space: nowrap;
 }
 .support_res h4{
     margin: 0;
