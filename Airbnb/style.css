@@ -893,7 +893,20 @@ padding: 6px 5px 0;
         margin-inline-start: 906px;
        
     }
-    
+    .privacy_termsone ul{
+        margin-inline-start: 30px;
+    }
+    .privacy_termsone ul li{
+        padding: 3px;
+    }
+    .footer_rupeesone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .world_logo_footerone img{
+        margin-right: 3px;
+            }
   
   
 }
