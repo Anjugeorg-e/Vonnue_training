@@ -475,6 +475,63 @@ body{
 }
 
 
+.fa-btn{
+    display: block;
+    position: relative;
+}
+nav ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+
+.fa-show{
+    position: static;
+    display: none;
+}
+.fa-show.show{
+    display: block;
+}
+nav ul li{
+    line-height: 60px;
+}
+nav ul p{
+    margin: 0;
+}
+nav ul li {
+    position: relative;
+    font-size: 17px;
+    columns: #222;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    
+}
+.fa-btn .fas{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.4s;
+}
+.fa-btn .fas.rotate{
+    transform:  rotate(180deg);
+}
+nav ul ul li{
+    line-height: 42px;
+}
+nav ul ul li a{
+    font-size: 17px;
+    
+}
+/* .shop_common{
+    display: none;
+} */
+
+
+
+
+
 @media screen and (min-width: 375px) {
     .subcomponents li span{
         font-size: 13px;

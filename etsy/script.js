@@ -403,18 +403,33 @@ function popularGiftsofday() {
         
 
       }
-
-
-
-    // wheartimg.addEventListener("ondbclick", () => {
-    //   let wheartimg = document.createElement("span");
-    //   imgContainer.appendChild(wheartimg);
-    //   wheartimg.innerHTML = whiteHeartImg;
-    // })
   }
 }
 popularGiftsofday(popularGifts);
 
+
+const toggles=document.querySelector('.fa-show')
+const toggleBtn = document.querySelector('.fa-btn')
+console.log("haiiii")
+
+// toggleBtn.forEach(toggleBtn => {
+//   console.log("hai")
+// })
+
+toggleBtn.forEach (toggle => {
+  console.log("hai")
+  toggleBtn.addEventListener('click', ()=>{
+     toggles.classList.toggle('show')
+  })
+});
+
+
+
+// const chevron = documnet.querySelector('.fas')
+// chevron.addEventListener('click',()=>{
+//    chevron.classList.add('rotate')
+// })
+// })
 
 // const navItems=[
 // {
