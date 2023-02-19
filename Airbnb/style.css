@@ -441,7 +441,25 @@ padding: 6px 5px 0;
     display: none;
 }
 
+.airbnb-headerone
+{
+    background-color: white;
+    /* top: -1px; */
+    z-index: 3;
+    position: sticky;
+    padding-bottom: 9px;
+    top: 0;
 
+}
+.airbnb_listone{
+    top: 73px;
+    position: fixed;
+    z-index: 8;
+    background-color: white;
+}
+.container{
+    margin-top: 100px;
+}
 
 
 /*media query*/
@@ -485,6 +503,11 @@ padding: 6px 5px 0;
     .nav_footer{
         padding: 15px 117px;
     }
+    /* .airbnb-headerone{
+        position: fixed;
+        
+        background-color: white;
+    } */
 }
 
 @media screen and (min-width: 744px) {
@@ -786,6 +809,16 @@ padding: 6px 5px 0;
     height: 80px;
     z-index: 10;
 }
+.headertwo_subhead{
+    background-color: white;
+    /* top: -1px; */
+    z-index: 3;
+    position: sticky;
+    padding-bottom: 9px;
+    top: 0;
+}
+
+
 }
 @media screen and (min-width:778px) {
     .headtwo-tab{
@@ -905,8 +938,22 @@ padding: 6px 5px 0;
         justify-content: center;
     }
     .world_logo_footerone img{
-        margin-right: 3px;
-            }
+        margin-right: 6px;
+    }.footer_rupeesone img{
+        margin-block-start: 11px;
+    }
+    .headertwo_subhead{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+    }
+    .airbnb_listone{
+        position: fixed;
+        background-color: white;
+        z-index: 3;
+    }
   
   
 }
