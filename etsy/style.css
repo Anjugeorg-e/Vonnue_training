@@ -564,14 +564,57 @@ nav ul ul li a{
     margin-right: 12px;
 }
 
-.text{
+.sidebar{
     background-color: #2f466c;
     color: #fff;
 }
 .text ul ul li a{
     color: #fff;
 }
+.socialmedia img{
+    padding: 6px;
+    margin-right: 12px;
+    width: 36px;
+    height: 36px;
 
+}
+.socialmedia{
+    margin: 16px 0 0;
+}
+.download_etsy{
+    margin: 12px 0 0;
+    padding: 12px 24px;
+}
+.etsy_download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 26px;
+    padding: 6px 0;
+}
+.etsy_download span{
+    margin-left: 6px;
+}
+.countries_etsy{
+    background-color: #232347;
+    color: #fff;
+    padding: 18px 24px;
+}
+.language_etsy{
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    margin-bottom: 12px;
+}
+.etsy_inc_ul li{
+    list-style-type: none;
+    
+}
+.etsy_inc_ul li a{
+    color: #fff;
+    margin-right: 12px;
+}
 
 
 @media screen and (min-width: 375px) {
