@@ -9,6 +9,10 @@ const whiteHeartImg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 2
 
 const redHeartImg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z" fill="#A61A2E"></path></svg>`;
 
+
+const playButtons=`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`
+
+
 const navHeaderLinks = document.createElement("ul");
 navHeaderLinks.classList.add("nav_header_links");
 navHeader.appendChild(navHeaderLinks);
@@ -191,6 +195,7 @@ const popularGifts = [
     h3: "Birth Flower Jewelry Travel Case, Birth Month Flower Gift, Personalized Birthday Gift, Leather Jewelry Travel Case, Custom Jewelry Case",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 4,
+    playbutton:"",
     rating: "(9,792)",
     price: "",
     actualprice: 1709,
@@ -204,6 +209,7 @@ const popularGifts = [
     h3: "Dainty Name Necklace with Birth Flower, Personalized Name Necklace, Custom Gold Name Jewelry, Birthday Gift for Her, Bridesmaid Gift",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
+    playbutton:"",
     rating: "(13,853)",
     price: "",
     actualprice: 1452,
@@ -217,6 +223,7 @@ const popularGifts = [
     h3: "Custom Pet Portraits Using Pet Photo Personalized Digital Dog Portraits Cat Portraits Custom Dog Portraits Custom Pet Art Pet Drawing",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
+    playbutton:`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="14" height="14"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`,
     rating: "(11,504)",
     price: "",
     actualprice: 3296,
@@ -231,6 +238,7 @@ const popularGifts = [
     h3: "Heart Keychain Set - Made with Authentic LEGO® Bricks, Matching keychains, Gift Set for Couples, Best Friends - Very High Quality & DURABLE",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
+    playbutton:`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="14" height="14"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`,
     rating: "(13,015)",
     price: " ",
     actualprice: 1278,
@@ -245,6 +253,7 @@ const popularGifts = [
     h3: "Sun catcher/ Crystal suncatcher/ Crystal Rainbow maker/ Aurora gemstone suncatcher/ crystal prism/ wall hanging/ Home decor/ Gift 4 women",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
+    playbutton:`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="14" height="14"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`,
     rating: "(7,048)",
     price: " ",
     actualprice: 4695,
@@ -258,6 +267,7 @@ const popularGifts = [
     h3: "Handmade Damascus Pocket Knife Rose Wood Handle Birthday Gift Folding Knife Groomsmen Gift Anniversary Wedding Personalized Gift for Men",
     star: `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="3 3 18 18" aria-hidden="true" focusable="false" width="14" height="14"><path d="M19.985,10.36a0.5,0.5,0,0,0-.477-0.352H14.157L12.488,4.366a0.5,0.5,0,0,0-.962,0l-1.67,5.642H4.5a0.5,0.5,0,0,0-.279.911L8.53,13.991l-1.5,5.328a0.5,0.5,0,0,0,.741.6l4.231-2.935,4.215,2.935a0.5,0.5,0,0,0,.743-0.6l-1.484-5.328,4.306-3.074A0.5,0.5,0,0,0,19.985,10.36Z" fill="#222222"></path></svg>`,
     starcount: 5,
+    playbutton:`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="14" height="14"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`,
     rating: "(6,473)",
     price: " ",
     actualprice: 1539,
@@ -362,7 +372,15 @@ function popularGiftsofday() {
       let giftsvideo = document.createElement("video");
       imgContainer.appendChild(giftsvideo);
       giftsvideo.src = popularGifts[i].videourl;
+      giftsvideo.poster=popularGifts[i].img
       giftsvideo.classList.add("gifts_video");
+     
+
+      let playbuttonns=document.createElement("span")
+      imgContainer.appendChild(playbuttonns)
+      playbuttonns.innerHTML=playButtons
+      playbuttonns.classList.add("play_button")
+      
 
       giftsvideo.addEventListener("mouseenter", () => {
         giftsvideo.autoplay = false;
@@ -371,6 +389,9 @@ function popularGiftsofday() {
       });
       giftsvideo.addEventListener("mouseleave", () => {
         giftsvideo.pause();
+
+        giftsvideo.load();
+
         giftsvideo.currentTime = 0;
       });
     } else if (popularGifts[i].type === "image") {
@@ -411,23 +432,22 @@ popularGiftsofday(popularGifts);
 
 const toggles=document.querySelectorAll('.fa-show')
 const toggleBtn = document.querySelectorAll('.fa-btn')
-
-
-
 toggleBtn.forEach ((toggle ,idx)=> {
   toggle.addEventListener('click', ()=>{
 
      toggles[idx].classList.toggle('show')
+     
     })
   });
-//   const chevron = document.querySelectorAll('.fas')
-//   chevron.forEach((chevron, idx) => {
+
+  const chevron = document.querySelectorAll('.fa-chevron-down')
+  console.log("hai")
+  chevron.forEach((chevron) => {
+  chevron.addEventListener('click',()=>{
+    chevron.classList.toggle('rotate')
+  })
   
-//   chevron.addEventListener('click',()=>{
-//     chevron[idx].classList.add('rotate')
-//   })
-  
-// })
+})
 
   console.log("haiiii")
 // const chevron = documnet.querySelector('.fas')
