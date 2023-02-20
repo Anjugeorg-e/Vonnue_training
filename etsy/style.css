@@ -476,15 +476,18 @@ body{
 
 
 .fa-btn{
-    display: block;
+    display: flex;
     position: relative;
+    align-items: center;
 }
 nav ul{
     height: 100%;
     width: 100%;
     list-style: none;
 }
-
+.text ul{
+    margin: 0;
+}
 .fa-show{
     position: static;
     display: none;
@@ -505,18 +508,39 @@ nav ul li {
     text-decoration: none;
     display: block;
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
     
 }
-.fa-btn .fas{
+.fa-btn span{
     position: absolute;
-    top: 50%;
+    left: 232px;
+} 
+/* .fa-btn .fas{
+    position: absolute;
+    
     transform: translateY(-50%);
     font-size: 22px;
     transition: transform 0.4s;
 }
 .fa-btn .fas.rotate{
     transform:  rotate(180deg);
-}
+} */
+
+/* 
+.fa-btn .fas{
+    position: absolute;
+    
+    /* transform: translateY(-50%); */
+    /* font-size: 22px;
+    transition: transform 0.4s; */
+/* }
+.fa-btn .fas .rotate{
+    transform:  rotate(180deg);
+}  */
+
+
+
 nav ul ul li{
     line-height: 42px;
 }
@@ -524,11 +548,29 @@ nav ul ul li a{
     font-size: 17px;
     
 }
+.text ul ul li a{
+  text-decoration: none;
+  color: #222;
+}
+.text ul ul{
+    margin-top: 37px;
+    margin-left: -46px;
+}
 /* .shop_common{
     display: none;
 } */
 
+.text ul li span{
+    margin-right: 12px;
+}
 
+.text{
+    background-color: #2f466c;
+    color: #fff;
+}
+.text ul ul li a{
+    color: #fff;
+}
 
 
 

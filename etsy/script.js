@@ -378,6 +378,7 @@ function popularGiftsofday() {
       imgContainer.appendChild(giftsimg);
       giftsimg.src = popularGifts[i].img;
     }
+
     let wheartimg = document.createElement("span");
     imgContainer.appendChild(wheartimg);
     wheartimg.classList.add("whiteheart");
@@ -408,60 +409,29 @@ function popularGiftsofday() {
 popularGiftsofday(popularGifts);
 
 
-const toggles=document.querySelector('.fa-show')
-const toggleBtn = document.querySelector('.fa-btn')
-console.log("haiiii")
+const toggles=document.querySelectorAll('.fa-show')
+const toggleBtn = document.querySelectorAll('.fa-btn')
 
-// toggleBtn.forEach(toggleBtn => {
-//   console.log("hai")
+
+
+toggleBtn.forEach ((toggle ,idx)=> {
+  toggle.addEventListener('click', ()=>{
+
+     toggles[idx].classList.toggle('show')
+    })
+  });
+//   const chevron = document.querySelectorAll('.fas')
+//   chevron.forEach((chevron, idx) => {
+  
+//   chevron.addEventListener('click',()=>{
+//     chevron[idx].classList.add('rotate')
+//   })
+  
 // })
 
-toggleBtn.forEach (toggle => {
-  console.log("hai")
-  toggleBtn.addEventListener('click', ()=>{
-     toggles.classList.toggle('show')
-  })
-});
-
-
-
+  console.log("haiiii")
 // const chevron = documnet.querySelector('.fas')
 // chevron.addEventListener('click',()=>{
 //    chevron.classList.add('rotate')
 // })
-// })
 
-// const navItems=[
-// {
-//   item:"Shop",
-// },
-// {
-//   item:" Sell",
-// },
-// {
-//   item:"About",
-// },
-// {
-//   item:"Help",
-// },
-// ]
-
-// const footerNav=document.querySelector('.label_container')
-
-// const footerNavUl = document.createElement("ul");
-// footerNavUl.classList.add("footer_navul");
-// footerNav.appendChild(footerNavUl);
-
-// for (let k = 0; k < navItems.length; k++) {
-//   const footernavli = document.createElement("li");
-//   footerNavUl.appendChild(footernavli);
-//   footernavli.classList.add("footer_navli");
-
-//   let footeritems = document.createElement("span");
-//   footernavli.appendChild(footeritems);
-//   footeritems.innerHTML = navItems[k].item;
-
-
-
-
-// }

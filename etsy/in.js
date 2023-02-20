@@ -9,20 +9,20 @@
 
 const toggles=document.querySelector('.fa-show')
 const toggleBtn = document.querySelector('.fa-btn')
-// toggleBtn.addEventListner('click' ,() => {
-//    toggles.classList.toggle('show')
-//    // toggles.classList.add('show')
-// // })
+toggleBtn.addEventListner('click' ,() => {
+   toggles.classList.toggle('show')
+   toggles.classList.add('show')
+})
 
 
-toggleBtn.forEach(toggleBtn => {
-   toggleBtn.addEventListener('click', ()=>{
-      toggles.classList.toggle('show')
-   })
+// toggleBtn.forEach(toggleBtn => {
+//    toggleBtn.addEventListener('click', ()=>{
+//       toggles.classList.toggle('show')
+//    })
    
-   const chevron = documnet.querySelector('.fas')
-   chevron.addEventListener('click',()=>{
-      chevron.classList.add('rotate')
-   })
+//    const chevron = documnet.querySelector('.fas')
+//    chevron.addEventListener('click',()=>{
+//       chevron.classList.add('rotate')
+//    })
    
-});
+// });
