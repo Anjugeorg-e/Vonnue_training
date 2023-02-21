@@ -368,7 +368,11 @@ body {
 }
 .nav_footer {
     padding: 13px 71px;
-    border-top: 1px solid rgb(235, 235, 235)
+    border-top: 1px solid rgb(235, 235, 235);
+    position: sticky;
+    bottom: 0;
+    z-index: 3;
+    background-color: #fff;
 }
 .nav_footer_items {
     display: flex;
@@ -456,9 +460,37 @@ body {
 .card_mainimage {
     position: relative;
 }
-.arrowimg i {
+.arrowimg .fa-chevron-right {
     padding: 4px;
     font-size: 15px;
+}
+.card_mainimage .fa-circle{
+    position: absolute;
+    bottom:36px;
+    right: 156px;
+    color: #fff;
+    font-size: 7px;
+    align-items: center;
+}
+.card_mainimage .fa-circle:nth-of-type(2){
+    margin-right: -13px;
+    font-size: 7px;
+    color: lightgray;
+}
+.card_mainimage .fa-circle:nth-of-type(3){
+    margin-right: -26px;
+    font-size: 6px;
+    color: lightgray;
+}
+.card_mainimage .fa-circle:nth-of-type(4){
+    margin-right: -39px;
+    font-size: 5px;
+    color: lightgray;
+}
+.card_mainimage .fa-circle:nth-of-type(5){
+    margin-right: -50px;
+    font-size: 4px;
+    color: lightgray;
 }
 
 /*media query*/
@@ -516,6 +548,9 @@ body {
     .listone_ul li:hover {
         border-bottom: 2px solid #dddddd;
     }
+    .card_mainimage .fa-circle{
+        right: 186px;
+    }
 }
 
 @media screen and (min-width: 425px) {
@@ -531,8 +566,17 @@ body {
     .container {
         margin-top: 76px;
     }
+    .card_mainimage .fa-circle{
+        right: 206px;
+    }
 }
 
+@media  screen and (min-width: 535px) {
+    .card_mainimage .fa-circle{
+        right: 270px;
+    }
+    
+}
 @media screen and (min-width: 744px) {
     .airbnb_headertwo {
         display: block;
@@ -858,6 +902,9 @@ body {
     .footer_rupeesone img {
         margin-top: 6px;
     }
+    .card_mainimage .fa-circle{
+        right: 196px;
+    }
 }
 
 @media screen and (min-width:778px) {
@@ -1005,6 +1052,7 @@ body {
     }
     .arrowimg {
         position: absolute;
+        top: 145px;
         width: 23px;
         height: 23px;
     }
@@ -1013,5 +1061,8 @@ body {
     }
     .container {
         margin-top: 20px;
+    }
+    .card_mainimage .fa-circle{
+        right: 186px;
     }
 }
