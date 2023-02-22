@@ -366,6 +366,7 @@ body {
 .privacy_terms ul li span {
     padding: 0 5px;
 }
+
 .nav_footer {
     padding: 13px 71px;
     border-top: 1px solid rgb(235, 235, 235);
@@ -815,6 +816,9 @@ body {
     .privacy_termsone li {
         list-style-type: none;
         line-height: 1.43;
+    }
+    .privacy_termsone ul li span{
+        margin-right: 12px;
     }
     .world_rupeesone h4 {
         margin: 0 24px 0 0;
