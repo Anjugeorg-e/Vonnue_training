@@ -52,26 +52,26 @@
  //or all items greater than 4
 
 
-//  const arr=[5, 4, 3, 2, 1];
-//  //filter all odd values
+ const array=[5, 4, 3, 2, 1];
+ //filter all odd values
 
-//  function isOdd(x){
-//     return x%2;
-//  }
+ function isOdd(x){
+    return x%2;
+ }
 
-//  function isEven(x){
-//     return x%2 === 0;
-//  }
+ function isEven(x){
+    return x%2 === 0;
+ }
 
-//  function gtFour(x){
-//     return x>4;
-//  }
-//  const four=arr.filter(gtFour)
-//  const outpu= arr.filter(isEven)
-//  const output = arr.filter(isOdd)
-//  console.log(output)
-//  console.log(outpu)
-//  console.log(four)
+ function gtFour(x){
+    return x>4;
+ }
+ const four=arr.filter(gtFour)
+ const outpu= arr.filter(isEven)
+ const output = arr.filter(isOdd)
+ console.log(output)
+ console.log(outpu)
+ console.log(four)
 
 
 
