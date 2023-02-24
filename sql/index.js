@@ -11,4 +11,3 @@
 //a record also called as a row ,is each individual entry that exists in a table
 //a column 
 
-//
