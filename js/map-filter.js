@@ -58,20 +58,22 @@
  function isOdd(x){
     return x%2;
  }
-
  function isEven(x){
     return x%2 === 0;
  }
-
  function gtFour(x){
     return x>4;
  }
- const four=arr.filter(gtFour)
- const outpu= arr.filter(isEven)
+ const four = arr.filter(gtFour)
+
+ const outpu = arr.filter(isEven)
+
  const output = arr.filter(isOdd)
+
  console.log(output)
  console.log(outpu)
  console.log(four)
+
 
 
 
@@ -104,6 +106,8 @@
 //and other is initail value of accumulator
 
 
+//sum of arrays in 
+
 const output = arr.reduce(function(acc, curr){
   acc= acc + curr;
   return acc;
@@ -116,10 +120,9 @@ console.log(output)
 
 //largest   elemnt  in an array
 
-const arra=[3, 2, 8,9, 5]
-
+const arra=[3, 2, 8, 9, 5]
 const outpu = arra.reduce(function(acc, curr){
-
+   
     if(curr>acc){
         acc=curr
     }
@@ -127,13 +130,11 @@ const outpu = arra.reduce(function(acc, curr){
 },0)
 console.log(outpu)
 
-
-
 const users=[
     {firstname:"anju", lastname:"george", age:26},
     {firstname:"ann", lastname:"annnnn", age:26},
     {firstname:"aunn", lastname:"aiin", age:15},
-    
+
 ]
 const out=users.map((x) => x.firstname + " "+  x.lastname)
 console.log(out)
@@ -155,7 +156,6 @@ const os=users.reduce(function(acc, curr){
 console.log(os)
 
 
-
 //filter example
 const user=[
     {firstname:"anju", lastname:"george", age:56},
@@ -171,4 +171,6 @@ console.log(oup)
 //and then we ran map over that filtered array and fetched the firstname alone
 
 //reduce for the same task
+
+
 
