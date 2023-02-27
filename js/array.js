@@ -1,4 +1,4 @@
-//array is a not primitive
++//array is a not primitive
 //so we can change the elemnts using index option  even though its declared as const 
 
 const friends = ['michael', 'steven', 'peter']

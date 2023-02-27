@@ -51,13 +51,12 @@ let classObj = {
 }
 
 
-// function classTeacher(){
-//     classObj.teacherName="annie"
-//     return classObj;
-// }
+function classTeacher(){
+    classObj.teacherName="annie"
+    return classObj;
+}
 
 // console.log(classTeacher())
-
 
 function addStudent(id,name){
     let newobj={
@@ -68,6 +67,7 @@ function addStudent(id,name){
     // console.log(newobj)
     classObj.students.push(newobj)
     console.log(classObj)
+
 }
 
 // let a=addStudent('5', "naan")
@@ -88,37 +88,56 @@ function mark(index){
 // console.log(mark(0))
 
 function englishMark(index){
-
    
        let Value=classObj.students[index].marks[3]
        console.log(Value)
    
 }
-// console.log(englishMark(0))
 
-function totalmark(idx){
-let sum=0;
+// console.log(removeStudent(2))
 
-    for(let i=0; i<5;i++){
-
-        let p=classObj.students[idx].marks[i].mark
-                sum=sum+p
-    }
-   return sum;
+function totalMarks(id, students){
+    x= students.find((student) => {
+        return (student.id === id)
+    })
+    total =0
+    x.marks.forEach(mobj =>{
+        total += mobj.mark
+    })
+    
+    console.log(total)
 }
+// console.log(totalMarks('102', classObj.students))
 
-console.log( "total mark:" + totalmark(3))
 
-
-function removeStudent(id){
-    classObj.students.pop(id)
+function removeStudent(students){
+    // x=students.find((student) => {
+    //     return student.id === id;  
+    // console.log(x)
+    // })
+    students.splice(0,1)
     return classObj
 }
-console.log(removeStudent(2))
+//  console.log(removeStudent(classObj.students))
+
+
+
+//remove a subject from array
 
 function removeSubject(){
-
+ for(let i=0;i<classObj.students.length;i++){
+     x=classObj.students[i].marks;
+     console.log(x)
+     x.splice(3,1)
+    }   
 }
+console.log(removeSubject())
+console.log(classObj.students)
 
-let q=classObj.students[0].marks[0].subject
-console.log(q)
+// classObj.students[0].marks.forEach(mark=>{
+//     console.log(mark.mark)
+    
+    
+// })
+// y= x.splice(3,1)
+//  console.log(x)
