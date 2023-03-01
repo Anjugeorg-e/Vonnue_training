@@ -71,6 +71,12 @@ function createNav(objectList) {
 }
 createNav(headerLinks);
 
+
+
+
+
+
+
 const discoverItems = [
   {
     imgURL: `https://i.etsystatic.com/17600118/c/1000/1000/0/119/il/d077de/2325460652/il_300x300.2325460652_lhfz.jpg`,
@@ -102,30 +108,48 @@ const discoverItems = [
   },
 ];
 
-function creatediscover(objectlist) {
-  const subComponents = document.querySelector(".subcomponents");
-  const subComponentsDiscover = document.createElement("ul");
-  subComponents.appendChild(subComponentsDiscover);
 
-  for (let i = 0; i < objectlist.length; i++) {
-    console.log(objectlist.length);
+const subComponents = document.querySelector(".subcomponents");
+const subcomponents_discover=document.querySelector('.subcomponents_discover')
 
-    let discoverLi = document.createElement("li");
-    subComponentsDiscover.appendChild(discoverLi);
-    discoverLi.classList.add("discover_li");
+  const discoverArray=discoverItems.map(function (item) {
+    const html=`
+    <li>
+    <img src="${item.imgURL}"></div>
+      <span>${item.title}</span>
+      </li>
+    `
+    return html
+  })
+  console.log(discoverArray.join(''))
+  subcomponents_discover.innerHTML= discoverArray.join('');
 
-    let discoverimg = document.createElement("img");
-    discoverLi.appendChild(discoverimg);
-    discoverimg.src = objectlist[i].imgURL;
+  
+  // function creatediscover(objectlist) {
+  //   const subComponents = document.querySelector(".subcomponents");
+  //   const subComponentsDiscover = document.createElement("ul");
+  //   subComponents.appendChild(subComponentsDiscover);
+  
+  //   for (let i = 0; i < objectlist.length; i++) {
+  //     console.log(objectlist.length);
+  
+  //     let discoverLi = document.createElement("li");
+  //     subComponentsDiscover.appendChild(discoverLi);
+  //     discoverLi.classList.add("discover_li");
+  
+  //     let discoverimg = document.createElement("img");
+  //     discoverLi.appendChild(discoverimg);
+  //     discoverimg.src = objectlist[i].imgURL;
+  
+  //     let discoverspan = document.createElement("span");
+  //     discoverLi.appendChild(discoverspan);
+  //     discoverspan.innerHTML = objectlist[i].title;
+  //   }
+  // }
+  // creatediscover(discoverItems);
 
-    let discoverspan = document.createElement("span");
-    discoverLi.appendChild(discoverspan);
-    discoverspan.innerHTML = objectlist[i].title;
-  }
-}
-creatediscover(discoverItems);
 
-const deals = [
+  const deals = [
   {
     image: `https://i.etsystatic.com/22368382/r/il/006d21/4245808662/il_300x300.4245808662_a3x4.jpg`,
     span: "Upto 40% off on",
@@ -157,37 +181,60 @@ const deals = [
     h3: "Wedding Clothing",
   },
 ];
-function dealsoftheday(objectList) {
+
+
+// function dealsoftheday(objectList) {
+//   const dealsComponent = document.querySelector(".dealscomponent");
+//   const dealsSubComponent = document.createElement("ul");
+//   dealsComponent.appendChild(dealsSubComponent);
+
+//   for (let i = 0; i < objectList.length; i++) {
+//     let dealsLi = document.createElement("li");
+//     dealsSubComponent.appendChild(dealsLi);
+
+//     let dealsmaindiv = document.createElement("div");
+//     dealsLi.appendChild(dealsmaindiv);
+//     dealsmaindiv.classList.add("deals_maindiv");
+
+//     let dealsimg = document.createElement("img");
+//     dealsmaindiv.appendChild(dealsimg);
+//     dealsimg.src = objectList[i].image;
+
+//     let dealsdiv = document.createElement("div");
+//     dealsmaindiv.appendChild(dealsdiv);
+//     dealsdiv.classList.add("deals_div");
+
+//     let dealsspan = document.createElement("span");
+//     dealsdiv.appendChild(dealsspan);
+//     dealsspan.innerHTML = objectList[i].span;
+
+//     let dealsheading = document.createElement("h3");
+//     dealsdiv.appendChild(dealsheading);
+//     dealsheading.innerHTML = objectList[i].h3;
+//   }
+// }
+// dealsoftheday(deals);
+
+
+
   const dealsComponent = document.querySelector(".dealscomponent");
-  const dealsSubComponent = document.createElement("ul");
-  dealsComponent.appendChild(dealsSubComponent);
+  const dealsUl=document.querySelector('.dealsul')
+    const fullArray=deals.map(function (item) {
+      const html=`
+      <li>
+      <div class="dealsmaindiv">
+      <img src="${item.image}"></div>
+       <div class="deals_div">
+        <span>${item.span}</span>
+        <h3>${item.h3}</h3>
+      </div>
+      </li>
+      `
+      return html
+    })
+    console.log(fullArray.join(''))
+    dealsUl.innerHTML= fullArray.join('');
 
-  for (let i = 0; i < objectList.length; i++) {
-    let dealsLi = document.createElement("li");
-    dealsSubComponent.appendChild(dealsLi);
-
-    let dealsmaindiv = document.createElement("div");
-    dealsLi.appendChild(dealsmaindiv);
-    dealsmaindiv.classList.add("deals_maindiv");
-
-    let dealsimg = document.createElement("img");
-    dealsmaindiv.appendChild(dealsimg);
-    dealsimg.src = objectList[i].image;
-
-    let dealsdiv = document.createElement("div");
-    dealsmaindiv.appendChild(dealsdiv);
-    dealsdiv.classList.add("deals_div");
-
-    let dealsspan = document.createElement("span");
-    dealsdiv.appendChild(dealsspan);
-    dealsspan.innerHTML = objectList[i].span;
-
-    let dealsheading = document.createElement("h3");
-    dealsdiv.appendChild(dealsheading);
-    dealsheading.innerHTML = objectList[i].h3;
-  }
-}
-dealsoftheday(deals);
 
 const popularGifts = [
   {
