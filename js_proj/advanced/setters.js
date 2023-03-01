@@ -29,3 +29,6 @@ console.log(b1.width, b1.height)
 
 //inheritence
 
+//prototype
+//---->whenever we create an object JS engine automatically assigns some hidden properties to the  newly created object and which is known as 
+//prototype
