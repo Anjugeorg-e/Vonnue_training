@@ -9,7 +9,6 @@ const whiteHeartImg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 2
 
 const redHeartImg = `<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><path d="M16.5,3A6.953,6.953,0,0,0,12,5.051,6.912,6.912,0,0,0,7.5,3C4.364,3,2,5.579,2,9c0,5.688,8.349,12,10,12S22,14.688,22,9C22,5.579,19.636,3,16.5,3Z" fill="#A61A2E"></path></svg>`;
 
-
 const playButtons=`<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false" width="24" height="24"><polygon points="4 4 4 20 20 12 4 4" fill="#222222"></polygon></svg>`
 
 
@@ -71,9 +70,21 @@ function createNav(objectList) {
 }
 createNav(headerLinks);
 
+// const subComponents = document.querySelector(".subcomponents");
+// const subcomponents_discover=document.querySelector('.subcomponents_discover')
 
-
-
+//   const discoverArray=discoverItems.map(function (item) {
+//     const html=`
+//     <li>
+//       <img src="${item.imgURL}">
+//       </div>
+//       <span>${item.title}</span>
+//     </li>
+//     `
+//     return html
+//   })
+//   console.log(discoverArray.join(''))
+//   subcomponents_discover.innerHTML= discoverArray.join('');
 
 
 
@@ -115,9 +126,10 @@ const subcomponents_discover=document.querySelector('.subcomponents_discover')
   const discoverArray=discoverItems.map(function (item) {
     const html=`
     <li>
-    <img src="${item.imgURL}"></div>
+      <img src="${item.imgURL}">
+      </div>
       <span>${item.title}</span>
-      </li>
+    </li>
     `
     return html
   })
